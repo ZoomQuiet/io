@@ -1,5 +1,10 @@
-rss.xml
-_drafts
-log
-book
-*.plist
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv

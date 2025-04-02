@@ -1,0 +1,61 @@
+site_name: ZoomQuiet.io
+site_description: "大妈的主页"
+site_author: "ZoomQuiet"
+site_url: "https://zoomquiet.io"
+repo_url: https://github.com/ZoomQuiet/io
+repo_name: ZoomQuiet/io
+edit_uri: edit/main/docs/
+copyright: Copyright 1974-2025 Zoom.Quiet, All rights reserved
+
+
+theme:
+  name: material
+  language: zh
+  custom_dir: '_theme/material'
+  palette:
+    scheme: default
+    primary: blue grey
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+
+plugins:
+  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+#  - search
+#  - macros
+
+markdown_extensions:
+  - toc:
+      baselevel: "3"
+      toc_depth: "3"
+      permalink: "¶"
+
+
+nav:
+  - '首页': index.md
+  - '大妈':
+    - About/index.md
+    - "关于": About/zoomquiet.md
+    - '友链': About/friendly-links.md
+    - "链接": About/linking.md
+    - "设计": About/design.md
+    - "EN": About/index_en.md
+    - "你好世界": About/hello-world.md
+  - '恕直': 
+    - IMHO/index.md
+  - '呢喃': 
+    - MurMur/index.md
+  - '钩陈': 
+    - OldTouch/index.md
+  - '旧告': 
+    - ANN/index.md
+  - '蟒样': 
+    - Pythonic/index.md
