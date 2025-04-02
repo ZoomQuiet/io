@@ -46,9 +46,10 @@ nav:
     - "关于": About/zoomquiet.md
     - '友链': About/friendly-links.md
     - "链接": About/linking.md
+    - "带货": About/affiliate.md
     - "设计": About/design.md
-    - "EN": About/index_en.md
     - "你好世界": About/hello-world.md
+    - "原装": About/default.md
   - '恕直': 
     - IMHO/index.md
   - '呢喃': 
