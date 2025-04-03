@@ -54,7 +54,8 @@ def reidx(c,limit=7, base_url=""):
             continue
         
         # 生成页面链接
-        page_url = os.path.join(base_url, path.replace('.md', '.html')).replace('\\', '/')
+        #page_url = os.path.join(base_url, path.replace('.md', '.html')).replace('\\', '/')
+        page_url = os.path.join(base_url, path.replace('.md', '/')).replace('\\', '/')
         filtered_entries.append({
             'title': title,
             'url': page_url,
