@@ -9,13 +9,13 @@
 > :::..
 
 
-+ [上周蠎快讯 2025/13](Pythonic/weekly/25/20250331-13.html)
-+ [上周蠎快讯 2025/12](Pythonic/weekly/25/20250324-12.html)
-+ [上周蠎快讯 2025/11](Pythonic/weekly/25/20250317-11.html)
-+ [上周蠎快讯 2025/10](Pythonic/weekly/25/20250310-10.html)
-+ [上周蠎快讯 2025/09](Pythonic/weekly/25/20250303-09.html)
-+ [上周蠎快讯 2025/08](Pythonic/weekly/25/20250224-08.html)
-+ [上周蠎快讯 2025/07](Pythonic/weekly/25/20250217-07.html)
++ [上周蠎快讯 2025/13](Pythonic/weekly/25/20250331-13/)
++ [上周蠎快讯 2025/12](Pythonic/weekly/25/20250324-12/)
++ [上周蠎快讯 2025/11](Pythonic/weekly/25/20250317-11/)
++ [上周蠎快讯 2025/10](Pythonic/weekly/25/20250310-10/)
++ [上周蠎快讯 2025/09](Pythonic/weekly/25/20250303-09/)
++ [上周蠎快讯 2025/08](Pythonic/weekly/25/20250224-08/)
++ [上周蠎快讯 2025/07](Pythonic/weekly/25/20250217-07/)
 
 > ..:::
 
