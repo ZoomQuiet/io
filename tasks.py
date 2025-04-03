@@ -9,7 +9,8 @@
 from inv.conf import *
 #from lib.settings import CFG, LOG
 
-from inv.updating import *
+from inv.mkdocs import *
+from inv.latestor import *
 
 #   support stuff func.
 def cd(c, path2, echo=True):
@@ -45,3 +46,11 @@ def ver(c):
     for i in loaded_modules:
         print(f"{i}")
 
+
+
+@task
+def upd(c):
+    """update all the stuff"""
+    flush(c)
+    reidx(c)
+    return None

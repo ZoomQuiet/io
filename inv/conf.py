@@ -46,6 +46,8 @@ CONF = {
     "last": 7,
     "docs": "./docs",
     "cfyml": "mkdocs.yml",
+    "homd": "index.md",
+    "feed": "feed.xml",
 }
 
 Config = namedtuple("Config", CONF.keys())
