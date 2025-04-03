@@ -1,3 +1,4 @@
+# 设计
     Title: 设计
     Date: 2013-12-19
     Tags: doc
@@ -5,7 +6,7 @@
     Author: ZoomQuiet
     Status: draft
 
-# Design for everything
+> # Design for everything
 
 任何事儿都能通过设计获得提升!
 

@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "feedgen>=1.0.0",
     "invoke>=2.2.0",
     "jinja2>=3.1.6",
+    "loguru>=0.7.3",
     "mkdocs>=1.6.1",
     "mkdocs-git-authors-plugin>=0.9.4",
     "mkdocs-git-revision-date-localized-plugin>=1.4.5",
@@ -14,7 +16,6 @@ dependencies = [
     "mkdocs-macros-plugin>=1.3.7",
     "mkdocs-material>=9.6.11",
     "mkdocs-rss-plugin>=1.17.1",
-    "mkdocs-terminal>=4.7.0",
     "pygments>=2.19.1",
     "pymdown-extensions>=10.14.3",
 ]
