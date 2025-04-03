@@ -53,4 +53,5 @@ def upd(c):
     """update all the stuff"""
     flush(c)
     reidx(c)
+    c.run("mkdocs build")
     return None
