@@ -52,22 +52,117 @@ nav:
 - 首页: index.md
 - 通告:
   - ANN/index.md
+  - 公告/ 呢喃: ANN/20200302-ZQ42-ANN-NINAN.md
+  - 公告/ 叕重新开始的大妈: ANN/20200223-ZoomQuiet42-ANN-0-aaaagin.md
+  - 公告/ 拙见: ANN/20200222-ZQ42-ANN-IMHO.md
+  - 公告/ 钩陈: ANN/20200222-ZQ42-ANN-historic.md
+  - PRESSone: ANN/20170910-pressone.md
 - 大妈:
   - About/index.md
-  - 带货: About/affiliate.md
-  - 设计: About/design.md
-  - 友链: About/friendly-links.md
-  - 你好世界: About/hello-world.md
-  - 链接: About/linking.md
-  - 关于: About/zoomquiet.md
-- 窃以为:
+  - 链接: About/20241028-linking.md
+  - 关于: About/20241015-zoomquiet.md
+  - 友链: About/20200305-friendly-links.md
+  - 带货: About/20200214-affiliate.md
+  - 设计: About/20131219-design.md
+  - 你好世界: About/20130809-hello-world.md
+- 拙见:
   - IMHO/index.md
+  - DevOps:
+    - IMHO/DevOps/index.md
+    - 开源&开发者关系: IMHO/DevOps/20241220-devrel.md
+    - 开源&开发者关系: IMHO/DevOps/20241129-devrel.md
+    - 食堂监察?: IMHO/DevOps/20241107-watchdogfood.md
+    - 如何删除 Lark 资源?: IMHO/DevOps/20241009-deLark.md
+  - 自由开源:
+    - IMHO/FLOSS/index.md
+    - 企业知识管理?: IMHO/FLOSS/20241114-ekm-problem.md
+    - 关 乎社群:20 浅析社区需要什么?: IMHO/FLOSS/20141215-ac20-need-what.md
+    - 关 乎社群:1024 中国技术社区研究: IMHO/FLOSS/20140317-ac1024-tech-community4chinese.md
+    - 关 乎社群:2 什么是技术社区?: IMHO/FLOSS/20140227-ac2-tech-community.md
+    - 关 乎社群:1 什么是社区?: IMHO/FLOSS/20140220-ac1-zq.md
+    - wiki 不是任何人都可以用的!: IMHO/FLOSS/20101026-dont-use-wiki.md
+  - 睡后收入:
+    - IMHO/IAS/index.md
+    - 何为自主以及何以自主: IMHO/IAS/20241203-how2freedom.md
+    - 未来绝对价值是什么?: IMHO/IAS/20241129-future-need.md
+    - memeCOIN+DAO?: IMHO/IAS/20241125-memecoin-dao.md
+    - 什么是写作?: IMHO/IAS/20241028-iff-write.md
+    - 开源保险社区...: IMHO/IAS/20241026-jy-framwork.md
+    - UBNT+Cloudflared: IMHO/IAS/20240918-ubnt-cloudflared.md
+    - 拙见/ 科学'摸鱼'指北+1: IMHO/IAS/20200221-DM31-IMHO-how2work-deep.md
+    - 拙见/ 科学'摸鱼'指北+2: IMHO/IAS/20200221-DM32-IMHO-how2work-debug.md
+    - 科学'摸鱼'指北: IMHO/IAS/20200220-DM30-IMHO-how2work-dark.md
+  - 《我这样用GenAI》: IMHO/20240717-aigcxzh-genai102.md
+  - 普通人日常如何免费使用 GenAI 来改善探索?: IMHO/20240704-aigcxzh-genai101.md
+  - 探讨 信息化社会中 中国传统思想的作用: IMHO/19980101-chinese4internet.md
 - 呢喃:
   - MurMur/index.md
+  - 呢喃@2024:
+    - MurMur/24/index.md
+    - 生命时间的速率?: MurMur/24/20241219.md
+    - '"枪包"以及背带的进化': MurMur/24/20241215.md
+    - '|> 241112 日糟:': MurMur/24/20241112-1.md
+    - '|> 241112 日糟:': MurMur/24/20241112.md
+    - '|> 241109 日糟:': MurMur/24/20241109.md
+    - '> 241107 日糟:': MurMur/24/20241107.md
+    - '|> 241028 日糟:': MurMur/24/20241028.md
+    - 深挖开源的社会价值与经济规律: MurMur/24/20241024.md
+    - '|> 241023 日糟:': MurMur/24/20241023.md
+    - GOAT 的故事: MurMur/24/20241020.md
+    - '|> 241014 日糟:': MurMur/24/20241014.md
+    - '|> 240929 日糟:': MurMur/24/20240929.md
+    - '|> 240924 日糟:': MurMur/24/20240924.md
+    - '|> 240914 日糟:': MurMur/24/20240914.md
+    - '|> 240912 日糟:': MurMur/24/20240912.md
+    - '|> 240911 日糟:': MurMur/24/20240911.md
+    - '|> 240905 日糟:': MurMur/24/20240904.md
+    - '"枪包"以及背带的进化': MurMur/24/20240903.md
+    - 开源安全AI?: MurMur/24/20240723+1.md
+    - 和高手的差距: MurMur/24/20240723.md
+  - 呢喃@2025:
+    - MurMur/25/index.md
+    - LLM真提高了程序员的效率吗？: MurMur/25/20250312.md
+  - '"CIPHER"': MurMur/19961111-CIPHER.md
 - 钩陈:
   - OldTouch/index.md
+  - 钩陈2024:
+    - OldTouch/24/index.md
+    - 回答你这 9 个问题..: OldTouch/24/20241110-echo9dayu.md
+    - 友好的法院?: OldTouch/24/20241011-funny-court.md
+  - 钩陈/ 温总的语速...: OldTouch/20210807-OldTouch-APISIX.md
+  - 钩陈/ 什么是程序媛?: OldTouch/20200304-ZoomQuiet-OldTouch-380.md
+  - 钩陈/ 被jianshu认证了: OldTouch/20200227-ZoomQuiet-OldTouch-jianshu.md
+  - 钩陈/ CPUG故事: OldTouch/20200226-ZoomQuiet-OldTouch-CPUG.md
+  - 拙见/ 四处 箴言断喝: OldTouch/20200225-ZoomQuiet-OldTouch-DebugUself.md
+  - 钩陈/ 曾经 有关社区: OldTouch/20200225-ZoomQuiet-OldTouch-abt.md
+  - 钩陈/ 掠过 文化社区: OldTouch/20200225-ZoomQuiet-OldTouch-booking.md
+  - 钩陈/ 布道 技术社区: OldTouch/20200225-ZoomQuiet-OldTouch-tech.md
+  - 如何从 Jekyll 转进入 Pelican: OldTouch/20131219-jekyll2pelican.md
 - 蟒样:
   - Pythonic/index.md
+  - 蟒样@2024:
+    - Pythonic/24/index.md
+    - PJ.MIAOLAI D2: Pythonic/24/20241111-pj-miaolai-d2.md
+    - 截屏冲突解决: Pythonic/24/20241107-mac-snap-lunar.md
+    - Garage 作私人 S3 服务: Pythonic/24/20241029-intra-s3-garage.md
+    - 自持图床: Pythonic/24/20241028-loc-host-s3.md
+    - 古老的 dvd_subtitle: Pythonic/24/20241016-dvd_subtitle.md
+    - 如何给 mdBook 挂上 RSS?: Pythonic/24/20241016-rss4mdbook.md
+    - 如何给X生成RSS: Pythonic/24/20241015-rss-app-x.md
+    - 迁移 gh-pages 到 Cloudflare: Pythonic/24/20241014-cf-pages.md
+    - 电影中文字幕?: Pythonic/24/20241011-mov-sub.md
+  - 程序猿AIGC"工具包": Pythonic/20240123-aigc-x-zhuhai-toolkit4developer.md
+  - Python 中的字典调度模式: Pythonic/20230209-dict-dispatch-pattern-in-python .md
+  - ScrapBook 在 M1macOS 上恢复: Pythonic/20221213-scrapbook-revert.md
+  - 如何安定进入 M1maxMBP: Pythonic/20211114M1max-re-inti-MBP.md
+  - VNC回归轻松: Pythonic/20200704-easy-vnc.md
+  - 拙见/ DNS之殇: Pythonic/20200331-ZoomQuiet-MurMur-dnsad.md
+  - Elixir 中列出 Map 中值键对的折腾...: Pythonic/20200108-ex-map-enum.md
+  - 如何将 ipynb 发布到 blog 中?: Pythonic/20141127-ipynb-into-blog.md
+  - 十大早该知道的Python技巧: Pythonic/20141126-top10-Py-idioms-wish-learned-earlier.md
+  - 如何自在的折腾QPy: Pythonic/20140126-inti-my-qpy-env.md
+  - Python 列表为毛从0开始索引?: Pythonic/20131023-why0base-indexing-python.md
+  - 用 DSL 们构筑商用系统: Pythonic/201609DSLs-atop-openrety.md
 - 周刊:
   - Weekly/index.md
   - 2024 蟒周刊:

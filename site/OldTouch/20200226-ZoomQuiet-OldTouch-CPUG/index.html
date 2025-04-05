@@ -1,0 +1,5921 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="大妈的主页">
+      
+      
+        <meta name="author" content="ZoomQuiet">
+      
+      
+        <link rel="canonical" href="https://zoomquiet.io/OldTouch/20200226-ZoomQuiet-OldTouch-CPUG/">
+      
+      
+        <link rel="prev" href="../20200227-ZoomQuiet-OldTouch-jianshu/">
+      
+      
+        <link rel="next" href="../20200225-ZoomQuiet-OldTouch-DebugUself/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>钩陈/ CPUG故事 - ZoomQuiet.io</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cpug" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="ZoomQuiet.io" class="md-header__button md-logo" aria-label="ZoomQuiet.io" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZoomQuiet.io
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              钩陈/ CPUG故事
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZoomQuiet/io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZoomQuiet/io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ANN/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  通告
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../About/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  大妈
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../IMHO/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  拙见
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../MurMur/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  呢喃
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  钩陈
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Pythonic/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  蟒样
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Weekly/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  周刊
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ZoomQuiet.io" class="md-nav__button md-logo" aria-label="ZoomQuiet.io" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ZoomQuiet.io
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZoomQuiet/io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZoomQuiet/io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ANN/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    通告
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            通告
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ANN/20200302-ZQ42-ANN-NINAN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    公告/ 呢喃
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ANN/20200223-ZoomQuiet42-ANN-0-aaaagin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    公告/ 叕重新开始的大妈
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ANN/20200222-ZQ42-ANN-IMHO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    公告/ 拙见
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ANN/20200222-ZQ42-ANN-historic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    公告/ 钩陈
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ANN/20170910-pressone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PRESSone
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../About/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    大妈
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            大妈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20241028-linking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    链接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20241015-zoomquiet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20200305-friendly-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    友链
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20200214-affiliate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    带货
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20131219-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../About/20130809-hello-world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    你好世界
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../IMHO/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    拙见
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            拙见
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../IMHO/DevOps/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            DevOps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/DevOps/20241220-devrel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开源&开发者关系
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/DevOps/20241129-devrel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开源&开发者关系
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/DevOps/20241107-watchdogfood/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    食堂监察?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/DevOps/20241009-deLark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何删除 Lark 资源?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../IMHO/FLOSS/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    自由开源
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            自由开源
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20241114-ekm-problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    企业知识管理?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20141215-ac20-need-what/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关 乎社群:20 浅析社区需要什么?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20140317-ac1024-tech-community4chinese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关 乎社群:1024 中国技术社区研究
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20140227-ac2-tech-community/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关 乎社群:2 什么是技术社区?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20140220-ac1-zq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关 乎社群:1 什么是社区?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/FLOSS/20101026-dont-use-wiki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    wiki 不是任何人都可以用的!
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../IMHO/IAS/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    睡后收入
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            睡后收入
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20241203-how2freedom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    何为自主以及何以自主
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20241129-future-need/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    未来绝对价值是什么?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20241125-memecoin-dao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    memeCOIN+DAO?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20241028-iff-write/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    什么是写作?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20241026-jy-framwork/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开源保险社区...
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20240918-ubnt-cloudflared/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UBNT+Cloudflared
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20200221-DM31-IMHO-how2work-deep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拙见/ 科学'摸鱼'指北+1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20200221-DM32-IMHO-how2work-debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拙见/ 科学'摸鱼'指北+2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/IAS/20200220-DM30-IMHO-how2work-dark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    科学'摸鱼'指北
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/20240717-aigcxzh-genai102/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    《我这样用GenAI》
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/20240704-aigcxzh-genai101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    普通人日常如何免费使用 GenAI 来改善探索?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../IMHO/19980101-chinese4internet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    探讨 信息化社会中 中国传统思想的作用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../MurMur/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    呢喃
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            呢喃
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../MurMur/24/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    呢喃@2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            呢喃@2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241219/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    生命时间的速率?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241215/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    "枪包"以及背带的进化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241112-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241112 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241112/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241112 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241109/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241109 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241107/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    > 241107 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241028/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241028 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    深挖开源的社会价值与经济规律
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241023 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GOAT 的故事
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20241014/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 241014 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240929/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240929 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240924/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240924 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240914/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240914 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240912/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240912 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240911/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240911 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240904/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    |> 240905 日糟:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240903/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    "枪包"以及背带的进化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240723%2B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    开源安全AI?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/24/20240723/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    和高手的差距
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../MurMur/25/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    呢喃@2025
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            呢喃@2025
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/25/20250312/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LLM真提高了程序员的效率吗？
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MurMur/19961111-CIPHER/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    "CIPHER"
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    钩陈
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            钩陈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../24/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    钩陈2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            钩陈2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24/20241110-echo9dayu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    回答你这 9 个问题..
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24/20241011-funny-court/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    友好的法院?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20210807-OldTouch-APISIX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 温总的语速...
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200304-ZoomQuiet-OldTouch-380/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 什么是程序媛?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200227-ZoomQuiet-OldTouch-jianshu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 被jianshu认证了
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ CPUG故事
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ CPUG故事
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpug" class="md-nav__link">
+    <span class="md-ellipsis">
+      钩陈/ CPUG故事
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      自在的行者社区
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200225-ZoomQuiet-OldTouch-DebugUself/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拙见/ 四处 箴言断喝
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200225-ZoomQuiet-OldTouch-abt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 曾经 有关社区
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200225-ZoomQuiet-OldTouch-booking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 掠过 文化社区
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20200225-ZoomQuiet-OldTouch-tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    钩陈/ 布道 技术社区
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20131219-jekyll2pelican/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何从 Jekyll 转进入 Pelican
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Pythonic/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    蟒样
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            蟒样
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Pythonic/24/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    蟒样@2024
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            蟒样@2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241111-pj-miaolai-d2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PJ.MIAOLAI D2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241107-mac-snap-lunar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    截屏冲突解决
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241029-intra-s3-garage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Garage 作私人 S3 服务
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241028-loc-host-s3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自持图床
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241016-dvd_subtitle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    古老的 dvd_subtitle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241016-rss4mdbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何给 mdBook 挂上 RSS?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241015-rss-app-x/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何给X生成RSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241014-cf-pages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迁移 gh-pages 到 Cloudflare
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/24/20241011-mov-sub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电影中文字幕?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20240123-aigc-x-zhuhai-toolkit4developer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    程序猿AIGC"工具包"
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20230209-dict-dispatch-pattern-in-python%20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python 中的字典调度模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20221213-scrapbook-revert/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ScrapBook 在 M1macOS 上恢复
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20211114M1max-re-inti-MBP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何安定进入 M1maxMBP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20200704-easy-vnc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    VNC回归轻松
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20200331-ZoomQuiet-MurMur-dnsad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拙见/ DNS之殇
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20200108-ex-map-enum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Elixir 中列出 Map 中值键对的折腾...
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20141127-ipynb-into-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何将 ipynb 发布到 blog 中?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20141126-top10-Py-idioms-wish-learned-earlier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    十大早该知道的Python技巧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20140126-inti-my-qpy-env/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何自在的折腾QPy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/20131023-why0base-indexing-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Python 列表为毛从0开始索引?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pythonic/201609DSLs-atop-openrety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    用 DSL 们构筑商用系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Weekly/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    周刊
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            周刊
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Weekly/24/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2024 蟒周刊
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            2024 蟒周刊
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241230-52/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/52
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241223-51/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/51
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241216-50/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/50
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241209-49/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/49
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241202-48/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/48
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241125-47/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/47
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241118-46/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/46
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241111-45/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/45
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241028-43/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/43
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241028-44/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/44
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241020-42/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/42
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241014-41/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/41
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20241006-40/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/40
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240929-39/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/39
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240922-38/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/38
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240915-37/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/37
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240908-36/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/36
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240901-35/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/35
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240825-34/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/34
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240818-33/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/33
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240811-32/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/32
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240804-31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/31
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240728-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/30
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240721-29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/29
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240714-28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/28
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240707-27/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/27
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240630-26/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/26
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240623-25/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/25
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240616-24/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/24
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240609-23/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/23
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240602-22/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/22
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240526-21/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/21
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240519-20/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/20
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240512-19/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/19
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240505-18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/18
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240428-17/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/17
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240421-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240414-15/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/15
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240407-14/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/14
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240331-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240324-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240317-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240310-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240303-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/9
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240225-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/8
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240218-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240211-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240204-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240128-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240121-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240114-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/24/20240107-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2024/1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Weekly/25/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    2025 蟒周刊
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            2025 蟒周刊
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250331-13/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/13
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250324-12/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/12
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250317-11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250310-10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/10
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250303-09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/09
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250224-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/08
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250217-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/07
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250210-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/06
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250202-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/05
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250127-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/04
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250120-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/03
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250113-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Weekly/25/20250106-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上周蠎快讯 2025/01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpug" class="md-nav__link">
+    <span class="md-ellipsis">
+      钩陈/ CPUG故事
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      自在的行者社区
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ZoomQuiet/io/edit/main/docs/OldTouch/20200226-ZoomQuiet-OldTouch-CPUG.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>钩陈/ CPUG故事</h1>
+
+<pre><code>Title: 钩陈/ CPUG故事
+Date: 2020-02-26 10:42
+Modified: 2020-03-05 15:42
+Authors: ZoomQuiet
+Category: OldTouch
+Tags: OldTouch, python, commuinty, history
+Summary: OldTouch/ about CPUG history with zoomquiet
+Slug: oldtouch-historic-cpug
+</code></pre>
+<h3 id="cpug">钩陈/ CPUG故事<a class="headerlink" href="#cpug" title="Permanent link">¶</a></h3>
+<blockquote>
+<p>普通老 Pythoneer 行者的回忆...</p>
+</blockquote>
+<p>这是大妈在 <strong>ZoomQuiet</strong> 的第<strong>004</strong>篇原创</p>
+<hr />
+<h4 id="_1">背景<a class="headerlink" href="#_1" title="Permanent link">¶</a></h4>
+<p>PyCon2020US 已经开始注册, PyCon2020中国也在筹备中...</p>
+<p>但是, 发现, 无论什么大会, 论及中国Python社区时,
+总以为:</p>
+<ul>
+<li>有个社区叫:<code>Python 中国社区</code></li>
+<li>是最早的中国 Python 技术社区</li>
+</ul>
+<p>这就比较尴尬了...</p>
+<hr />
+<h4 id="_2">现象<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>搜索引擎查: <code>Python 中国 社区</code></p>
+</blockquote>
+<p>立即可以看到有无数名称类似的网站, 比如:</p>
+<ul>
+<li>Python中文社区 - 全球Python中文开发者的精神部落 - 知乎<ul>
+<li>https://zhuanlan.zhihu.com/zimei</li>
+<li>https://python-chinese.github.io/</li>
+</ul>
+</li>
+<li>Python论坛 - 国内最好的Python中文社区<ul>
+<li>https://bbs.pythontab.com/</li>
+</ul>
+</li>
+<li>Python社区 - 专注于Python技术发展的社区(原Django社区)<ul>
+<li>http://www.python88.com/</li>
+</ul>
+</li>
+<li>Python 中文学习大本营<ul>
+<li>http://www.pythondoc.com/</li>
+</ul>
+</li>
+<li>... 以及历史上各种包含这几个关键词的各种域名的各种社区</li>
+</ul>
+<hr />
+<h4 id="_3">回忆<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
+<blockquote>
+<p>其实, 不是的...</p>
+</blockquote>
+<p>仅仅以一篇老文章来回顾一下, Python 在中国的社区故事吧.</p>
+<h3 id="_4">自在的行者社区<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
+<p>~ 简述CPyUG(华蟒用户组)的学习生态</p>
+<h4 id="_5">源起::<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<pre><code>庄秀丽 &lt;xiuli.zhuang@gmail.com&gt;
+发件人当地时间 发送时间 12:53 (GMT+08:00). 发送地当前时间:下午12:06.  ✆
+主题  "中国教育网络"组文:开放网络社区中的学习组织
+</code></pre>
+<p>涉及 <a href="http://www.media.edu.cn/">"中国教育网络"</a> ^杂志^</p>
+<blockquote>
+<p>主管单位:中华人民共和国教育部,主办单位:教育部科技发展中心,承办单位: 中国教育和科研计算机网. 
+在其中进行相关社会化学习社区的介绍和经验分享</p>
+</blockquote>
+<p>其实在各种场合,大家都知道啄木鸟/CPyUG 社区是中国最大的Py 技术社区,但是具体的一直没有方式的说明...</p>
+<blockquote>
+<p>特此, 由 ZoomQuiet 发起,进行相关的社区介绍组织 ;-)</p>
+</blockquote>
+<h4 id="_6">社区自述<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<p><a href="http://wiki.woodpecker.org.cn/moin/CPUG">CPyUG ~ Chinese Python User Group (华蟒用户组)</a></p>
+<ul>
+<li>由全球使用中文的Python程序员自发组成,面向实习/应用/推广Python 以及相关技术的愛好者;关注Python语言在中国的应用/推广/学习...<ul>
+<li>成员号称 <a href="http://zh.wikipedia.org/wiki/%E8%A1%8C%E8%80%85">行者</a></li>
+<li>这本来是佛教术语:"泛指一般佛道的修行者,又称行人,修行人"</li>
+<li>因为Python 这一开发语言,在中国一直处于被主流媒体无视的状态,所以,完全出于下意识的对美的代码的追求,而聚集起来使用 Python的程序员们,就非常象古时卓然在浊世中独自修研佛法的行者了 ;-)</li>
+</ul>
+</li>
+<li>社区经过长期演化,稳定在几个核心服务于公众的Py学习/分享:<ul>
+<li>http://python.cn + http://www.woodpecker.org.cn/ 两个核心索引网站,指引新人到最常用的几个服务</li>
+<li>http://python.cn/pipermail/python-chinese/ 为核心的系列邮件列表服务,支持日常的技术讨论/分享/交流</li>
+<li>http://wiki.woodpecker.org.cn/moin/ 啄木鸟维基,作为社区的知识仓库,记录各种讨论出的成果</li>
+</ul>
+</li>
+</ul>
+<h4 id="_7">发展简忆<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<ul>
+<li>2001-04-03 中国Linux论坛首先开辟 Python 专栏:<a href="http://www.linuxforum.net/forum/showflat.php?Cat=&amp;Board=python&amp;Number=96403&amp;page=100&amp;view=collapsed&amp;sb=5&amp;o=&amp;fpart=">今天我上任!</a>, Limodou 主持,开始小范围聚集最早的一批Python 行者</li>
+<li>2003-02 [http://www.czug.org/ 中国Zope用户组]发布专题技术网站,从而令更多的人知道了 Python</li>
+<li>2004-01 在exoweb.com 的全额赞助下,通过 python.cn 这一域名发布了专题技术讨论列表:<ul>
+<li><code>python-chinese@lists.python.cn</code></li>
+<li>归档: <code>http://python.cn/pipermail/python-chinese/</code>(使用纯Pytyhon 编写的 mailman 系统)</li>
+<li>以HD主持的一系列Python 开源项目为话题,将原先分散在各种BBS的中国Py开发人员聚集到在这一列表中;</li>
+</ul>
+</li>
+<li>2004-03-30 ZoomQuiet 架设并发布了 Python知识维基 <code>http://220.248.2.35:7080</code> (使用 MoinMoin 1.2,也是纯Python 写的维基引擎)</li>
+<li>2005-05,HD 从SINA提供主机资源,发布啄木鸟维基 http://wiki.woodpecker.org.cn</li>
+<li>结合邮件列表,快速形成了相对稳定的项目导向的学习型(<a href="http://wiki.woodpecker.org.cn/moin/CoP">CoP</a>)社区;</li>
+<li><a href="http://wiki.woodpecker.org.cn/moin/BPUG/2005-07-30">2005-07-30 啄木鸟会课中,自发宣告成立 </a></li>
+</ul>
+<p><img alt="logo" src="http://woodpecker.up.zoomquiet.top/logos/120201-CPyUG-logo-v2all-w200.png" /></p>
+<h5 id="_8">邮件列表变迁::<a class="headerlink" href="#_8" title="Permanent link">¶</a></h5>
+<ul>
+<li>2004.1~2007.1 exoweb.com 贡献公司资源,发布 http://python.cn 以及 <code>python-chinese@lists.python.cn</code> ^mailman 的邮件列表^,成为中国首批Python 程序猿的讨论中心<ul>
+<li>同时也备案到: <a href="http://dir.gmane.org/gmane.comp.python.chinese">gmane.comp.python.chinese</a>: <a href="http://news.gmane.org/gmane.comp.python.chinese">新闻组形式</a>/<a href="http://blog.gmane.org/gmane.comp.python.chinese">Blog形式</a></li>
+</ul>
+</li>
+<li>2006.04~2008.01 自动备份在: http://groups.google.com/group/pythonzh/about ^tomz 配置^</li>
+<li>2007年 exoweb 停止带宽的赞助后,<code>python-chinese@lists.python.cn</code> 迁移到哲思社区中 合并到 <code>zeuux-python@zeuux.org</code> ^同樣是mailman 发布的列表^<ul>
+<li>原列表归档也迁移为: <code>http://www.zeuux.org/pipermail/zeuux-python</code> ^已消失^</li>
+</ul>
+</li>
+<li>Limodou 私人于2004-10-19 创建 python-cn@googlegroups 列表;和原先的自架列表并行使用;</li>
+<li>自2008 年以来主要的技术讨论就已经聚集在: <ul>
+<li>http://groups.google.com/group/python-cn</li>
+<li>同时也订阅为:<a href="http://dir.gmane.org/gmane.org.user-groups.python.chinese">gmane.org.user-groups.python.chinese</a>:<a href="http://blog.gmane.org/gmane.org.user-groups.python.chinese">Blog形式</a>/<a href="http://news.gmane.org/gmane.org.user-groups.python.chinese">新闻组形式</a></li>
+</ul>
+</li>
+<li>在2011 年整体迁移到哲思平台中的: <a href="http://www.zeuux.org/group/python/bbs/page478/">ZEUUX:Python 群组</a></li>
+</ul>
+<p>邮件列表一直以来很活跃,其中也引发了无数事件,相关变化截屏可以参考:</p>
+<ul>
+<li>python-cn列表史截屏 <ul>
+<li>(已下线 - 好看簿图片博客:用照片记录生活 - http://www.haokanbu.com/story/11015/)</li>
+</ul>
+</li>
+<li>当前(2010)的历史邮件情况:</li>
+</ul>
+<p><img alt="ml2010" src="http://s5.zoomquiet.top/100729-ks-timemana/img/cpug-ml-zoomq-2010-06-04-111017_628x701_scrot.png" /></p>
+<h4 id="_9">社区结构<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<p>社区从组织结构来说,由以下几个层次的在线群体松散的聚合而成:</p>
+<ul>
+<li>啄木鸟社区,作为HD个人捐助域名,公司赞助网站空间(2004~2010 是SINA公司,之后由豆瓣全情赞助),为CPyUG
+提供基础信息发布/管理支持,其中的主机管理成员,维基管理成员/编辑成员,成为 CPyUG 的核心成员;</li>
+<li>主要包含 <a href="http://wiki.woodpecker.org.cn/moin/">维基</a>/<a href="http://woodpecker.org.cn/planet/">聚合</a> 服务,以及域名资源;</li>
+<li>2010 年以前由SINA 全程赞助</li>
+<li>2010 年以来,豆瓣团队义务承担了啄木鸟社区的所有系统的发布和运维</li>
+<li>http://groups.google.com/group 由Google 免费提供的邮件列表服务,通过不同的列表,聚集了不同地域不同领域的沟通:</li>
+<li>python-cn@googlegroups.com 是CPyUG 主讨论列表,所有成员针对技术/开发/工程问题进行开放式沟通</li>
+<li>bpug@googlegroups.com 京蟒用户组,是CPyUG北京地区的线下交流活动的组织事务沟通列表</li>
+<li>zpug@googlegroups.com 珠三角华蟒用户组,是CPyUG珠三角地区地区的线下交流活动的组织事务沟通列表</li>
+<li>等等...</li>
+<li>各个列表的管理成员,基本成为当地同城市 CPyUG 技术交流活动的核心成员</li>
+<li>以及在各种线下技术交流活动中吸引进来的新人以及受到各种引用资料召唤主动加入列表的,成为 CPyUG 不断积累的主体成员</li>
+</ul>
+<h4 id="_10">社区现状<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
+<p>发展至今,主列表订阅成员超过 <code>8600</code>人- ,累计在全国各个城市进行线下会课 44 次;</p>
+<ul>
+<li><code>会课</code> 已经成为 CPyUG 最有代表性的自发学习活动;简要的过程是:</li>
+<li>列表中发起,预告会课行进日期,时间,一般提前一~三周;</li>
+<li>提前一周收集确认好本次会课的主题内容和讲师,全部靠自愿/自主报名;</li>
+<li>按期完成现场会课,收集照片/录音/录像等各种记录</li>
+<li>48小时之内,整理发布到维基中,并在列表中通告,以便未能到现场的,可以持续参考
+        - 会课引发的各种项目,也将在列表中长期沟通
+        - 成熟的就演化成在 code.google/bitbucket/github 等免费工程空间中的正式开源项目进行持续开发...</li>
+<li>进一步的,因感觉到Py的学习中文资料不足,大家自发的形成各种文档的翻译团队,义务的为社区进行各种翻译和推广<ul>
+<li>甚至于引起了出版社的注意,主动和 CPyUG 沟通,形成了多本图书的工程</li>
+<li>进而引发了相关经验的积累: <a href="http://code.google.com/p/openbookproject/wiki/HowToBuildBookOnline">如何在线組織图书创译</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="sns">SNS学习<a class="headerlink" href="#sns" title="Permanent link">¶</a></h4>
+<p>作为全程参与者, ZoomQuiet 以个人的体验来回顾 CPyUG 从无到有到成为全球最大的中文Py技术社区这其中有关社会化学习的方面, 感觉主要有这几点是值得回味的:</p>
+<h5 id="_11">项目导向:<a class="headerlink" href="#_11" title="Permanent link">¶</a></h5>
+<ul>
+<li>从一开始用具体的开发项目来作为参与的筛选标准,以及讨论内容,就决定了 CPyUG 是一个实践社区</li>
+<li>种下这一社区基因后,从后来的服务提供/会课组织/讨论氛围等等,都包含了实作为上,项目正果的态度</li>
+<li>也积累引发出了有CPyUG 特色的 Python 学习劝诫: <a href="http://wiki.woodpecker.org.cn/moin/RouseChina">奋起宣言</a></li>
+</ul>
+<p>: </p>
+<pre><code>每日至少抽一刻钟,解答邮件列表中初学者的问题,
+每周至少抽两小时,整理新学知识将体验发表/分享出去,
+　　通过Blog/Wiki/邮件列表/个人网站... 
+每旬至少抽四个小时, 来翻译自个儿喜爱的自由软件的文档,
+每月至少抽八小时, 快乐的编程,推进自个儿的项目,
+每年至少参加一次, 自由软件的活动,传播自由软件思想,
+　　发展一名"自由人"... 
+只要我们每个人都坚持下去... 
+10年!就足以改变中国软件的整体风貌!
+</code></pre>
+<ul>
+<li><a href="http://wiki.woodpecker.org.cn/moin/Py8Rong8Chi">Pythonic八荣八耻</a></li>
+</ul>
+<p>:</p>
+<pre><code>以动手实践为荣 , 以只看不练为耻;
+以打印日志为荣 , 以单步跟踪为耻;
+以空格缩进为荣 , 以制表缩进为耻;
+以单元测试为荣 , 以人工测试为耻;
+以模块复用为荣 , 以复制粘贴为耻;
+以多态应用为荣 , 以分支判断为耻;
+以Pythonic为荣 , 以冗余拖沓为耻;
+以总结分享为荣 , 以跪求其解为耻;
+</code></pre>
+<ul>
+<li>等等,有趣有用的类似口号的断言,在社区的各种沟通渠道中传播,形成了独特的鲜明的个性,创造出了不同的学习目的指向:</li>
+</ul>
+<blockquote>
+<pre><code>  追求简单而有力的美
+</code></pre>
+</blockquote>
+<h5 id="_12">列表文化:<a class="headerlink" href="#_12" title="Permanent link">¶</a></h5>
+<ul>
+<li>社区以完全不同于在中国流行的BBS/QQ群 等等娱乐导向的讨论形式--mailing list(邮件列表)为核心沟通方式</li>
+<li>直接引入了这一古老而优雅的技术交流文化</li>
+<li>在日常一封封邮件的传播过程中树立起了:<ul>
+<li>为自己的言论负责</li>
+<li>对事不对人</li>
+<li>热情帮助他人就是帮助自己</li>
+</ul>
+</li>
+<li>等等发源自列表文化的交流意识,有力的确保新人得到良好的支持,高手享受到平等高效的交流;
+   进而铸造出社区的独特学习氛围;</li>
+<li>核心成员:<ul>
+<li>在长期运营社区的各种平台和活动后,发觉,一个技术社区的气质是由极少数核心成员来引导的</li>
+<li>核心成员的特质:<ul>
+<li>热心 ~ 长期热情的回答任何问题,在列表发送邮件的数量非常惊人比如说 者群組建立以來 limodou@gmail.com 累计发送了 <code>9265</code> 封邮件!</li>
+<li>正直 ~ 不论多么无聊/简单/可笑的问题,都尽力回答,并说明社区的沟通建议</li>
+<li>强大 ~ 本身技术积累丰厚,在各种领域都有足够的实践积累,可以随时举出对应的代码实例来说明</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>这种核心成员,不是自封的,而是在长年的社区交流过程中,为所有人认可的,难以动摇的</li>
+<li>他们的言行/态度/决策,直接影响了整个社区的所有方面</li>
+</ul>
+<blockquote>
+<p>如果社区缺少了这类核心成员的坐阵,
+  将立即充满了各种无意义的情绪发泄式的邮件,
+  对技术型自学习型社区造成难以弥补的破坏性影响!</p>
+</blockquote>
+<h4 id="_13">图书事件<a class="headerlink" href="#_13" title="Permanent link">¶</a></h4>
+<p>~ <a href="http://nicholas-ding.javaeye.com/blog/206347">"Python 核心编程"应属于社区翻译 - Nicholas_Ding - JavaEye技术网站</a></p>
+<p>(原文已经删, 私人备案: <a href="http://devrel.zoomquiet.io/data/20080704230201/index.html">"Python 核心编程"应属于社区翻译</a>)</p>
+<p>因由::</p>
+<ul>
+<li><a href="http://wiki.woodpecker.org.cn/moin/BPUG/2007-09-01">CPyUG总第21次.会课理想</a> 中,<code>宋吉广</code> 提出"Python核心编程" 的翻译交社区进行;</li>
+<li>社区成立<a href="http://wiki.woodpecker.org.cn/moin/CorePyProgramming">项目组</a> ,并在 <a href="http://groups.google.com/group/openbookproject"> OpenBookProject</a>中进行版本控制和协同</li>
+<li>在征集了志愿者,并通过维基进行<a href="http://wiki.woodpecker.org.cn/moin/CorePyProgramming/revision">进度追踪</a>,通过网络进行快速的迭代,2007-12-07 交付译稿</li>
+<li>然后,<code>宋吉广</code>  就消失在邮件列表中了</li>
+<li>结果 2008-6-23 <a href="http://product.china-pub.com/39969#yzx">Python核心编程(中文 第二版) (08年度畅销榜TOP50)</a> 上架销售时,大家才发现,宋吉广 只是在序言中提及获得了社区的帮助,根本没有说明图书内容的真正来源!</li>
+<li>发觉这一明目张胆的偷窃行为后,社区成员尝试过多种方式来补救:<ul>
+<li>在所有图书的在线推荐中进行说明</li>
+<li>和出版社接触,说明实际,寻求解决</li>
+<li>集资,招募律师进行起述</li>
+</ul>
+</li>
+<li>但是,由于社区本身没有法律实体,当初也没有和出版社进行任何形式的约定,最终这一偷窃作为既定现实,被大家无奈的接受了;</li>
+</ul>
+<p>习得::</p>
+<ul>
+<li>CPyUG 社区聚集了中国主要的Python 用户和学习者,所以,相关Python 技术图书的翻译,出版社编辑总是找到社区来寻求帮助;</li>
+<li>但是所有成员,从来都是优先考虑是否有利于 Python 在中国的推广,没有想到有人利用这一社区资源,为自身谋利!</li>
+<li><code>宋吉广</code> 事件之后,大家继续挖掘,才知道,在这之前,有本 Ubuntu官方手册,也是 <code>宋吉广</code> 以同样手法骗取社区信任,集体完成的翻译!</li>
+<li>这一事件成为 CPyUG 集体版权法强化理解学习的激发事件,所有人意识到:</li>
+<li>社区的日常知识分享,技术讨论是有价值的,有版权的</li>
+<li>和出版社等法律实体打交道时,一定要事先沟通明确,不留法律漏洞</li>
+<li>个人的时间/精力总是有限的,不可能掌握所有社会技巧,专业人士作专业的事情最简单</li>
+<li>至此,但凡社区接类似的图书/文章的翻译/创作任务,都第一时间确认版权和回报问题!</li>
+</ul>
+<p>分析::</p>
+<ul>
+<li>正是 CPyUG 社区,尽力的将所有项目/讨论公开,从而达到了 <code>AKA</code>~<a href="http://wiki.woodpecker.org.cn/moin/KaoPulity">All Know All</a> 的状态</li>
+<li>形成了每一成员的社区归宿感,愿意为自身认同的各种社区项目贡献时间/精力</li>
+<li>每一次挫折也從而可能立即形成社区共有的经验,并立即应用起来!</li>
+</ul>
+<h4 id="_14">社区展望<a class="headerlink" href="#_14" title="Permanent link">¶</a></h4>
+<p>综上, CPyUG 经过7年的发展,已经形成了足够稳固的文化和学习模式,识别出了固定的学习人群,</p>
+<p>但是, 其运营的支撑核心,那些左右社区气质的核心成员,总是会老去,变动,转移兴趣,如何识别/培养/吸引可以成为核心成员的学习者?!</p>
+<p>这将是 CPyUG 当前最大的挑战...</p>
+<h4 id="_15">联系社区<a class="headerlink" href="#_15" title="Permanent link">¶</a></h4>
+<ul>
+<li>Zoom.Quiet <ul>
+<li>电邮/GTalk: Zoom.Quiet AT gmail.com</li>
+<li>个站: http://zoomquiet.io</li>
+</ul>
+</li>
+<li>Limodou<ul>
+<li>电邮/GTalk: limodou.cn AT gmail.com&gt;</li>
+<li>个站: http://hi.baidu.com/limodou</li>
+<li>维基: http://wiki.woodpecker.org.cn/moin/limodou</li>
+</ul>
+</li>
+</ul>
+<h4 id="_16">是也乎<a class="headerlink" href="#_16" title="Permanent link">¶</a></h4>
+<p><img alt="cpyug_historic_mapping.png(PNG 图像,941x1074 像素)" src="http://0.zoomquiet.top/ZQCollection/map/cpyug_historic_mapping.png?imageView2/2/w/640" /></p>
+<ul>
+<li>150211 大妈 根据 <a href="http://www.v2ex.com/t/170350#reply13">为何国内没有靠谱的 Python 论坛? - V2EX</a> 的有关回答增补</li>
+<li>150106 大妈 根据微信群的反馈创立</li>
+<li>110903 ZoomQuiet 增补细节,列表截屏</li>
+<li>110325 ZoomQuiet 迁移为 code.google 维基,增补图书事件</li>
+<li>110228 ZoomQuiet 初稿发布</li>
+<li>110225 ZoomQuiet 初始化</li>
+</ul>
+<p>原文: <a href="https://code.google.com/p/cpyug/wiki/CpyUg">CpyUg - cpyug - Historic of Chinese Python User Group - CPyUG~华蟒用户组 相关邮件列表管理通告收集/维护 - Google Project Hosting</a>
+维基: <a href="http://wiki.pychina.org/hd/CpyUgHistoric.html">自在的行者社区 | PyChina.org Static Wiki</a></p>
+<hr />
+<h4 id="refer">refer.<a class="headerlink" href="#refer" title="Permanent link">¶</a></h4>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/26832983">我不认识Pythoner这种开发者 - 知乎</a></li>
+</ul>
+<p><img alt="v2-4c23e4b623898389d4031f69dd3cbded_1200x500.jpg (JPEG Image, 900 × 500 pixels)" src="https://pic4.zhimg.com/v2-4c23e4b623898389d4031f69dd3cbded_1200x500.jpg" /></p>
+<p>文中链接感谢<a href="https://linux.cn/static/tools/a.html">"文章助手"的助手</a> 的支持,
+(来自 <a href="(https://linux.cn/article-11850-1.html)">LINUX中国</a> 的小应用)</p>
+<ul>
+<li>可以点击, 将自动复制对应链接到剪贴板</li>
+<li>然后打开浏览器, 复制到地址栏访问</li>
+</ul>
+<hr />
+<h4 id="ps">PS:<a class="headerlink" href="#ps" title="Permanent link">¶</a></h4>
+<p><code>新冠肺炎(NCP)正确应对姿势</code> 系列之后被读者触发的两个系列:</p>
+<ul>
+<li>为什么就是不愿意上班?</li>
+<li>科学'摸鱼'指北</li>
+</ul>
+<p>都已完结,虽然分散在各个公众号中...</p>
+<p>接下来会嗯哼什么, 俺也没计划, 想哪儿怼哪儿了;</p>
+<p>欢迎大家留言触发其它 <code>有用/有趣/有种</code> 的系列话题.</p>
+<hr />
+<blockquote>
+<blockquote>
+<p>NN 3935</p>
+</blockquote>
+</blockquote>
+<p>好文笔,感叹号年度配额: <strong>1/3</strong></p>
+<hr />
+<p>ZoomQuiet/<strong>大妈</strong></p>
+<p>就是四处 <code>是也乎,(￣▽￣)</code> 的那个大妈:</p>
+<ul>
+<li>私自嗯哼: ZoomQuiet (订阅号 <strong>ZoomQuiet42</strong>)</li>
+<li>公开课程: <strong>蟒营</strong> (订阅号: Mainium)</li>
+<li>全国大会: PyChina (订阅号: PyChinaOrg)</li>
+<li>本地社区: <ul>
+<li>GDG珠海 (订阅号: GDG-ZhuHai)</li>
+<li>TFUG珠海 (订阅号: ZH_TFUG)</li>
+</ul>
+</li>
+<li>历史吐糟: Chaos42 (订阅号 PythoniCamp)</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年4月5日 09:24:43">2025年4月5日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年4月5日 09:24:43">2025年4月5日</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="贡献者">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+      
+    </span>
+    <nav>
+      
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+<script
+  src="https://giscus.app/client.js"
+  data-repo="zoom-quiet/comments"
+  data-repo-id="MDEwOlJlcG9zaXRvcnkxOTc1MzkxNjE="
+  data-category="Sites Comment"
+  data-category-id="DIC_kwDOC8Y1Wc4Cossk"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="light"
+  data-lang="zh-CN"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async
+></script>
+
+<hr />
+
+<i>旧[utteranc.es]注释:</i>
+
+<script
+  src="https://utteranc.es/client.js"
+  repo="zoom-quiet/comments"
+  issue-term="url"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../20200227-ZoomQuiet-OldTouch-jianshu/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 钩陈/ 被jianshu认证了">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                钩陈/ 被jianshu认证了
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../20200225-ZoomQuiet-OldTouch-DebugUself/" class="md-footer__link md-footer__link--next" aria-label="下一页: 拙见/ 四处 箴言断喝">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                拙见/ 四处 箴言断喝
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 1974-2025 Zoom.Quiet, All rights reserved
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.annotate", "content.code.copy", "content.footnote.tooltips", "content.tabs.link", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.path", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
