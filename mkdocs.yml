@@ -93,12 +93,15 @@ nav:
   - 探讨 信息化社会中 中国传统思想的作用: IMHO/19980101-chinese4internet.md
 - 呢喃:
   - MurMur/index.md
+  - 呢喃@2025:
+    - MurMur/25/index.md
+    - LLM真提高了程序员的效率吗？: MurMur/25/20250312.md
   - 呢喃@2024:
     - MurMur/24/index.md
     - 生命时间的速率?: MurMur/24/20241219.md
     - '"枪包"以及背带的进化': MurMur/24/20241215.md
-    - '|> 241112 日糟:': MurMur/24/20241112-1.md
     - '|> 241112 日糟:': MurMur/24/20241112.md
+    - '|> 241112 日糟:': MurMur/24/20241112-1.md
     - '|> 241109 日糟:': MurMur/24/20241109.md
     - '> 241107 日糟:': MurMur/24/20241107.md
     - '|> 241028 日糟:': MurMur/24/20241028.md
@@ -115,9 +118,6 @@ nav:
     - '"枪包"以及背带的进化': MurMur/24/20240903.md
     - 开源安全AI?: MurMur/24/20240723+1.md
     - 和高手的差距: MurMur/24/20240723.md
-  - 呢喃@2025:
-    - MurMur/25/index.md
-    - LLM真提高了程序员的效率吗？: MurMur/25/20250312.md
   - '"CIPHER"': MurMur/19961111-CIPHER.md
 - 钩陈:
   - OldTouch/index.md
@@ -129,10 +129,10 @@ nav:
   - 钩陈/ 什么是程序媛?: OldTouch/20200304-ZoomQuiet-OldTouch-380.md
   - 钩陈/ 被jianshu认证了: OldTouch/20200227-ZoomQuiet-OldTouch-jianshu.md
   - 钩陈/ CPUG故事: OldTouch/20200226-ZoomQuiet-OldTouch-CPUG.md
-  - 拙见/ 四处 箴言断喝: OldTouch/20200225-ZoomQuiet-OldTouch-DebugUself.md
-  - 钩陈/ 曾经 有关社区: OldTouch/20200225-ZoomQuiet-OldTouch-abt.md
   - 钩陈/ 掠过 文化社区: OldTouch/20200225-ZoomQuiet-OldTouch-booking.md
+  - 拙见/ 四处 箴言断喝: OldTouch/20200225-ZoomQuiet-OldTouch-DebugUself.md
   - 钩陈/ 布道 技术社区: OldTouch/20200225-ZoomQuiet-OldTouch-tech.md
+  - 钩陈/ 曾经 有关社区: OldTouch/20200225-ZoomQuiet-OldTouch-abt.md
   - 如何从 Jekyll 转进入 Pelican: OldTouch/20131219-jekyll2pelican.md
 - 蟒样:
   - Pythonic/index.md
@@ -142,8 +142,8 @@ nav:
     - 截屏冲突解决: Pythonic/24/20241107-mac-snap-lunar.md
     - Garage 作私人 S3 服务: Pythonic/24/20241029-intra-s3-garage.md
     - 自持图床: Pythonic/24/20241028-loc-host-s3.md
-    - 古老的 dvd_subtitle: Pythonic/24/20241016-dvd_subtitle.md
     - 如何给 mdBook 挂上 RSS?: Pythonic/24/20241016-rss4mdbook.md
+    - 古老的 dvd_subtitle: Pythonic/24/20241016-dvd_subtitle.md
     - 如何给X生成RSS: Pythonic/24/20241015-rss-app-x.md
     - 迁移 gh-pages 到 Cloudflare: Pythonic/24/20241014-cf-pages.md
     - 电影中文字幕?: Pythonic/24/20241011-mov-sub.md
@@ -161,6 +161,21 @@ nav:
   - 用 DSL 们构筑商用系统: Pythonic/201609DSLs-atop-openrety.md
 - 周刊:
   - Weekly/index.md
+  - 2025 蟒周刊:
+    - Weekly/25/index.md
+    - 上周蠎快讯 2025/13: Weekly/25/20250331-13.md
+    - 上周蠎快讯 2025/12: Weekly/25/20250324-12.md
+    - 上周蠎快讯 2025/11: Weekly/25/20250317-11.md
+    - 上周蠎快讯 2025/10: Weekly/25/20250310-10.md
+    - 上周蠎快讯 2025/09: Weekly/25/20250303-09.md
+    - 上周蠎快讯 2025/08: Weekly/25/20250224-08.md
+    - 上周蠎快讯 2025/07: Weekly/25/20250217-07.md
+    - 上周蠎快讯 2025/06: Weekly/25/20250210-06.md
+    - 上周蠎快讯 2025/05: Weekly/25/20250202-05.md
+    - 上周蠎快讯 2025/04: Weekly/25/20250127-04.md
+    - 上周蠎快讯 2025/03: Weekly/25/20250120-03.md
+    - 上周蠎快讯 2025/02: Weekly/25/20250113-02.md
+    - 上周蠎快讯 2025/01: Weekly/25/20250106-01.md
   - 2024 蟒周刊:
     - Weekly/24/index.md
     - 上周蠎快讯 2024/52: Weekly/24/20241230-52.md
@@ -215,18 +230,3 @@ nav:
     - 上周蠎快讯 2024/3: Weekly/24/20240121-03.md
     - 上周蠎快讯 2024/2: Weekly/24/20240114-02.md
     - 上周蠎快讯 2024/1: Weekly/24/20240107-01.md
-  - 2025 蟒周刊:
-    - Weekly/25/index.md
-    - 上周蠎快讯 2025/13: Weekly/25/20250331-13.md
-    - 上周蠎快讯 2025/12: Weekly/25/20250324-12.md
-    - 上周蠎快讯 2025/11: Weekly/25/20250317-11.md
-    - 上周蠎快讯 2025/10: Weekly/25/20250310-10.md
-    - 上周蠎快讯 2025/09: Weekly/25/20250303-09.md
-    - 上周蠎快讯 2025/08: Weekly/25/20250224-08.md
-    - 上周蠎快讯 2025/07: Weekly/25/20250217-07.md
-    - 上周蠎快讯 2025/06: Weekly/25/20250210-06.md
-    - 上周蠎快讯 2025/05: Weekly/25/20250202-05.md
-    - 上周蠎快讯 2025/04: Weekly/25/20250127-04.md
-    - 上周蠎快讯 2025/03: Weekly/25/20250120-03.md
-    - 上周蠎快讯 2025/02: Weekly/25/20250113-02.md
-    - 上周蠎快讯 2025/01: Weekly/25/20250106-01.md

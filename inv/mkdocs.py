@@ -21,6 +21,87 @@ def extract_date_from_filename(filename: str) -> datetime | None:
 def build_nav(directory: str, base_path: str = '') -> list:
     """递归扫描目录并构建导航结构"""
     nav = []
+    subdirs_with_years = []  # 存储含年份的子目录 (year, subdir)
+    other_subdirs = []       # 存储其他子目录
+    files_with_dates = []    # 存储含日期的文件
+    other_files = []         # 存储其他文件
+
+    # 遍历目录中的所有文件和子目录
+    for item in os.listdir(directory):
+        item_path = os.path.join(directory, item)
+        rel_path = os.path.join(base_path, item)
+        if os.path.isdir(item_path):
+            # 检查子目录是否为纯数字（视为年份）
+            if item.isdigit():
+                try:
+                    year = int(item)  # 将子目录名转换为整数年份
+                    subdirs_with_years.append((year, item))
+                except ValueError:
+                    other_subdirs.append(item)
+            else:
+                other_subdirs.append(item)
+        elif item.endswith('.md') and item != 'index.md':
+            # 处理 Markdown 文件
+            if date := extract_date_from_filename(item):
+                files_with_dates.append((date, item, rel_path))
+            else:
+                other_files.append((item, rel_path))
+
+    # 对含年份的子目录按年份倒序排序
+    # 使用 reverse=True 确保年份从大到小（如 25 在 24 之前）
+    subdirs_with_years.sort(key=lambda x: x[0], reverse=True)
+
+    # 处理含年份的子目录
+    for _, subdir in subdirs_with_years:
+        sub_nav = build_nav(os.path.join(directory, subdir), os.path.join(base_path, subdir))
+        if sub_nav:
+            index_file = os.path.join(directory, subdir, 'index.md')
+            if os.path.exists(index_file):
+                if header := get_first_header(index_file):
+                    nav.append({header: sub_nav})
+                else:
+                    nav.append({subdir: sub_nav})
+            else:
+                nav.append({subdir: sub_nav})
+
+    # 处理其他子目录，按名称升序排序
+    # 使用 sorted 保持非年份子目录的字母顺序
+    for subdir in sorted(other_subdirs):
+        sub_nav = build_nav(os.path.join(directory, subdir), os.path.join(base_path, subdir))
+        if sub_nav:
+            index_file = os.path.join(directory, subdir, 'index.md')
+            if os.path.exists(index_file):
+                if header := get_first_header(index_file):
+                    nav.append({header: sub_nav})
+                else:
+                    nav.append({subdir: sub_nav})
+            else:
+                nav.append({subdir: sub_nav})
+
+    # 对含日期的文件按日期倒序排序
+    # 保持文件按时间从新到旧排列
+    files_with_dates.sort(key=lambda x: x[0], reverse=True)
+
+    # 添加含日期文件到 nav
+    for _, _, rel_path in files_with_dates:
+        if header := get_first_header(os.path.join(directory, rel_path.split('/')[-1])):
+            nav.append({header: rel_path})
+
+    # 添加其他文件到 nav，按名称升序排序
+    for item, rel_path in sorted(other_files):
+        if header := get_first_header(os.path.join(directory, item)):
+            nav.append({header: rel_path})
+
+    # 处理当前目录的 index.md，插入到导航开头
+    index_path = os.path.join(directory, 'index.md')
+    if os.path.exists(index_path):
+        nav.insert(0, os.path.join(base_path, 'index.md'))
+
+    return nav
+
+def _build_nav(directory: str, base_path: str = '') -> list:
+    """递归扫描目录并构建导航结构"""
+    nav = []
     files_with_dates = []
     other_files = []
 
@@ -66,33 +147,6 @@ def build_nav(directory: str, base_path: str = '') -> list:
 
     return nav
 
-def _build_nav(directory, base_path=''):
-    """递归扫描目录并构建导航结构"""
-    nav = []
-    for item in sorted(os.listdir(directory)):
-        item_path = os.path.join(directory, item)
-        rel_path = os.path.join(base_path, item)
-        if os.path.isdir(item_path):
-            index_file = os.path.join(item_path, 'index.md')
-            sub_nav = build_nav(item_path, rel_path)
-            if os.path.exists(index_file):
-                header = get_first_header(index_file)
-                if header and sub_nav:
-                    # 直接使用 header 作为键，不手动加引号
-                    nav.append({header: sub_nav})
-                elif sub_nav:
-                    nav.append({item: sub_nav})
-            elif sub_nav:
-                nav.append({item: sub_nav})
-        elif item.endswith('.md') and item != 'index.md':
-            header = get_first_header(item_path)
-            if header:
-                # 直接使用 header 作为键
-                nav.append({header: rel_path})
-    index_path = os.path.join(directory, 'index.md')
-    if os.path.exists(index_path):
-        nav.insert(0, os.path.join(base_path, 'index.md'))
-    return nav
 
 @task
 def flush(c):
