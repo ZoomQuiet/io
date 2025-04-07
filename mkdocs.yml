@@ -40,6 +40,7 @@ plugins:
 - git-authors
 - git-revision-date-localized:
     enable_creation_date: true
+- rss
 markdown_extensions:
 - toc:
     toc_depth: '3'
