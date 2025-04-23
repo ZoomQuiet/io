@@ -73,6 +73,7 @@ nav:
     - 如何删除 Lark 资源?: IMHO/DevOps/20241009-deLark.md
   - 自由开源:
     - IMHO/FLOSS/index.md
+    - 中国开源社区最大的威胁: IMHO/FLOSS/20250423-oss-cn-bigger-problem.md
     - 企业知识管理?: IMHO/FLOSS/20241114-ekm-problem.md
     - 关 乎社群:20 浅析社区需要什么?: IMHO/FLOSS/20141215-ac20-need-what.md
     - 关 乎社群:1024 中国技术社区研究: IMHO/FLOSS/20140317-ac1024-tech-community4chinese.md
@@ -97,6 +98,7 @@ nav:
   - MurMur/index.md
   - 呢喃@2025:
     - MurMur/25/index.md
+    - LLM时代工程师选型..: MurMur/25/20250423.md
     - LLM真提高了程序员的效率吗？: MurMur/25/20250312.md
   - 呢喃@2024:
     - MurMur/24/index.md
