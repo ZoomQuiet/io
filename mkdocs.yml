@@ -47,11 +47,11 @@ markdown_extensions:
     permalink: true
 nav:
 - 首页: index.md
-- 101camp:
-  - NC:
+- 蟒营®:
+  - 101camp/index.md
+  - 'NC: 嗯哼蟒营':
+    - 101camp/NC/index.md
     - NC0:一个自毁倾向社区的形成: 101camp/NC/20190711-NC101-self-destruction.md
-    - 'NC: 嗯哼蟒营': 101camp/NC/README.md
-  - 蟒营®: 101camp/README.md
 - 通告:
   - ANN/index.md
   - Follow 订阅源: ANN/20250407-ANN-follow.md
