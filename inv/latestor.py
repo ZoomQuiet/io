@@ -66,7 +66,11 @@ def reidx(c,limit=7, base_url=""):
     sorted_entries = sorted(filtered_entries, key=lambda x: x['time'], reverse=True)[:limit]
     
     # 生成 Markdown 列表
-    md_list = [f"+ [{entry['title']}]({entry['url']})" for entry in sorted_entries]
+    #md_list = [f"+ [{entry['title']}]({entry['url']})" for entry in sorted_entries]
+    #md_content = "\n".join(md_list)
+    #LOG.debug(f"appd_md:\n{md_content}")
+    # 生成 HTML 列表
+    md_list = [f"+ <a href='{entry['url']}'>{entry['title']}</a>" for entry in sorted_entries]
     md_content = "\n".join(md_list)
     LOG.debug(f"appd_md:\n{md_content}")
 

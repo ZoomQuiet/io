@@ -38,6 +38,7 @@ theme:
     view: material/eye
 plugins:
 - git-authors
+- rss
 markdown_extensions:
 - toc:
     toc_depth: '3'
@@ -125,8 +126,16 @@ nav:
     - '|> 240911 日糟:': MurMur/24/20240911.md
     - '|> 240905 日糟:': MurMur/24/20240904.md
     - '"枪包"以及背带的进化': MurMur/24/20240903.md
+    - '|> 240730 晨糟:': MurMur/24/20240730.md
+    - '|> 240727 晩安:': MurMur/24/20240727.md
+    - '|> 240725 晨糟:': MurMur/24/20240725.md
     - 开源安全AI?: MurMur/24/20240723+1.md
     - 和高手的差距: MurMur/24/20240723.md
+    - '|> 谁拥有市场, 谁就拥有智慧:': MurMur/24/20240722.md
+    - '|> 240718 晩安:': MurMur/24/20240718.md
+    - '|> 240717 晨糟': MurMur/24/20240717.md
+    - '|> 240717 晨糟+1': MurMur/24/20240717-1.md
+  - KnewOne-talk 之 大妈 篇: MurMur/20141223-zoomquiet4KO.md
   - '"CIPHER"': MurMur/19961111-CIPHER.md
 - 钩陈:
   - OldTouch/index.md

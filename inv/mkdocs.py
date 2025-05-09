@@ -42,7 +42,12 @@ def build_nav(directory: str, base_path: str = '') -> list:
                 other_subdirs.append(item)
         elif item.endswith('.md') and item != 'index.md':
             # 处理 Markdown 文件
+            
+            #if "20141223-zoomquiet4KO.md" == item:
+            #    LOG.info(f"{item}")
             if date := extract_date_from_filename(item):
+                #if "20141223-zoomquiet4KO.md" == item:
+                #    LOG.info(f"files_with_dates:{item}")
                 files_with_dates.append((date, item, rel_path))
             else:
                 other_files.append((item, rel_path))
@@ -167,7 +172,10 @@ def flush(c):
     for item in sorted(os.listdir(docs_dir)):
         item_path = os.path.join(docs_dir, item)
         if os.path.isdir(item_path):
+            #MurMur/20141223
+            #LOG.info(f"{item_path}")
             if sub_nav := build_nav(item_path, item):
+                #pp(sub_nav)
                 index_file = os.path.join(item_path, 'index.md')
                 if os.path.exists(index_file):
                     if header := get_first_header(index_file):
