@@ -225,7 +225,7 @@ M.Hamilton ...
 
 
 文中链接感谢["文章助手"的助手](https://linux.cn/static/tools/a.html) 的支持,
-(来自 [LINUX中国]((https://linux.cn/article-11850-1.html)) 的小应用)
+(来自 [LINUX中国](https://linux.cn/article-11850-1.html) 的小应用)
 
 - 点击, 将自动跳入小应用, 并复制链接到剪贴板
 - 然后, 打开浏览器, 复制到地址栏, 就能访问了

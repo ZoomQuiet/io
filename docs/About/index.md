@@ -5,7 +5,7 @@
 
 [TOC]
 
-[Zoom.Quiet](/zoomquiet.html)
+[Zoom.Quiet](20241015-zoomquiet.md)
 
 # ZoomQuiet.io
 in fact my logging is long time:

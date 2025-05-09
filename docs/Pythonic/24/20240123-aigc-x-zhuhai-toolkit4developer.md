@@ -1,4 +1,8 @@
+---
+date: 2024-01-23  # 在文件开头添加日期元数据
+---
 # 程序猿AIGC"工具包"
+
     Title: 程序猿AIGC"工具包"
     Slug: 240123-aigc-x-zhuhai-toolkit4developer
     Date: 2024-01-23 19:42

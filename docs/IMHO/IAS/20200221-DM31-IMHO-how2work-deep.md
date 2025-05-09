@@ -294,8 +294,8 @@
 - [关 乎社群:19 "自干"无底线 ;-) COSCUP亲历 / DevRel / 开发者关系.思考](https://devrel.101.camp/2014-08/ac19-coscup/)
 
 
-以下链接感谢["文章助手"的助手](https://linux.cn/static/tools/a.html) 的支持,
-(来自 [LINUX中国]((https://linux.cn/article-11850-1.html)) 的小应用)
+文中链接感谢["文章助手"的助手](https://linux.cn/static/tools/a.html) 的支持,
+(来自 [LINUX中国](https://linux.cn/article-11850-1.html) 的小应用)
 
 JD 下单链接->点击后再打开浏览器复制到地址栏访问:
 

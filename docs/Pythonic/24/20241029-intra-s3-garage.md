@@ -5,7 +5,7 @@
 
 ## background
 
-[10.28 自持图床](/Pythonic/24/20241028-loc-host-s3.html)
+[10.28 自持图床](20241028-loc-host-s3.md)
 
 之前各种网站发布图片, 无非几种:
 
@@ -42,7 +42,7 @@
     - 家庭宽带+Cloudflare/Zero Trust/network/tunnels
     - 配套免费 DNS 中的自动缓存, 也基本可以完美解决
     - 当然, 前提是有内部固定IP地址
-        - 参考: **[9.18 UBNT+Cloudflared](Pythonic/24/20240918-ubnt-cloudflared.md)**
+        - 参考: **[9.18 UBNT+Cloudflared](20240918-ubnt-cloudflared.md)**
 - 简洁稳定的 S3 兼容服务
     - S3 虽然贵到口碑都坏了, 但是, 作为世界上最通用的对象储存服务,有海量文档以及兼容工具可以使用, 如果兼容, 则可以立即获得类似 iPic
 - 结合 macOS 的内置 Automator/AppleScript 自制一个本地 `iPic` 小工具

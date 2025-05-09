@@ -38,9 +38,6 @@ theme:
     view: material/eye
 plugins:
 - git-authors
-- git-revision-date-localized:
-    enable_creation_date: true
-- rss
 markdown_extensions:
 - toc:
     toc_depth: '3'
@@ -103,6 +100,7 @@ nav:
   - MurMur/index.md
   - 呢喃@2025:
     - MurMur/25/index.md
+    - 煮面定律: MurMur/25/20250508.md
     - 广义布道者: MurMur/25/20250502-2.md
     - 书的未来：重定义与再想象: MurMur/25/20250424.md
     - LLM时代工程师选型..: MurMur/25/20250423.md
@@ -158,18 +156,19 @@ nav:
     - 如何给X生成RSS: Pythonic/24/20241015-rss-app-x.md
     - 迁移 gh-pages 到 Cloudflare: Pythonic/24/20241014-cf-pages.md
     - 电影中文字幕?: Pythonic/24/20241011-mov-sub.md
-  - 程序猿AIGC"工具包": Pythonic/20240123-aigc-x-zhuhai-toolkit4developer.md
+    - 9.18 UBNT+Cloudflared: Pythonic/24/20240918-ubnt-cloudflared.md
+    - 程序猿AIGC"工具包": Pythonic/24/20240123-aigc-x-zhuhai-toolkit4developer.md
   - Python 中的字典调度模式: Pythonic/20230209-dict-dispatch-pattern-in-python .md
   - ScrapBook 在 M1macOS 上恢复: Pythonic/20221213-scrapbook-revert.md
-  - 如何安定进入 M1maxMBP: Pythonic/20211114M1max-re-inti-MBP.md
+  - 如何安定进入 M1maxMBP: Pythonic/20211114-M1max-re-inti-MBP.md
   - VNC回归轻松: Pythonic/20200704-easy-vnc.md
   - 拙见/ DNS之殇: Pythonic/20200331-ZoomQuiet-MurMur-dnsad.md
   - Elixir 中列出 Map 中值键对的折腾...: Pythonic/20200108-ex-map-enum.md
+  - 用 DSL 们构筑商用系统: Pythonic/20170827-DSLs-atop-openrety.md
   - 如何将 ipynb 发布到 blog 中?: Pythonic/20141127-ipynb-into-blog.md
   - 十大早该知道的Python技巧: Pythonic/20141126-top10-Py-idioms-wish-learned-earlier.md
   - 如何自在的折腾QPy: Pythonic/20140126-inti-my-qpy-env.md
   - Python 列表为毛从0开始索引?: Pythonic/20131023-why0base-indexing-python.md
-  - 用 DSL 们构筑商用系统: Pythonic/201609DSLs-atop-openrety.md
 - 周刊:
   - Weekly/index.md
   - 2025 蟒周刊:
