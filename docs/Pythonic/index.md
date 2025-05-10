@@ -1,5 +1,5 @@
-# 蟒样
-> 技术猜想....
+# Pythonic
+> 技术感想....
 
 
 ## background

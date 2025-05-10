@@ -152,8 +152,11 @@ nav:
   - 钩陈/ 布道 技术社区: OldTouch/20200225-ZoomQuiet-OldTouch-tech.md
   - 钩陈/ 曾经 有关社区: OldTouch/20200225-ZoomQuiet-OldTouch-abt.md
   - 如何从 Jekyll 转进入 Pelican: OldTouch/20131219-jekyll2pelican.md
-- 蟒样:
+- Pythonic:
   - Pythonic/index.md
+  - 蟒样@2025:
+    - Pythonic/25/index.md
+    - 思维图谱矢量化: Pythonic/25/20250510-graphivz-svg.md
   - 蟒样@2024:
     - Pythonic/24/index.md
     - PJ.MIAOLAI D2: Pythonic/24/20241111-pj-miaolai-d2.md
