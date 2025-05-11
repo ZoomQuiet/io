@@ -50,14 +50,6 @@ nav:
   - 'NC: 嗯哼蟒营':
     - 101camp/NC/index.md
     - NC0:一个自毁倾向社区的形成: 101camp/NC/20190711-NC101-self-destruction.md
-- 通告:
-  - ANN/index.md
-  - Follow 订阅源: ANN/20250407-ANN-follow.md
-  - 公告/ 呢喃: ANN/20200302-ZQ42-ANN-NINAN.md
-  - 公告/ 叕重新开始的大妈: ANN/20200223-ZoomQuiet42-ANN-0-aaaagin.md
-  - 公告/ 拙见: ANN/20200222-ZQ42-ANN-IMHO.md
-  - 公告/ 钩陈: ANN/20200222-ZQ42-ANN-historic.md
-  - PRESSone: ANN/20170910-pressone.md
 - 大妈:
   - About/index.md
   - 链接: About/20241028-linking.md
@@ -143,6 +135,17 @@ nav:
     - OldTouch/24/index.md
     - 回答你这 9 个问题..: OldTouch/24/20241110-echo9dayu.md
     - 友好的法院?: OldTouch/24/20241011-funny-court.md
+  - 通告:
+    - OldTouch/ANN/index.md
+    - Follow 订阅源: OldTouch/ANN/20250407-ANN-follow.md
+    - 公告/ 呢喃: OldTouch/ANN/20200302-ZQ42-ANN-NINAN.md
+    - 公告/ 叕重新开始的大妈: OldTouch/ANN/20200223-ZoomQuiet42-ANN-0-aaaagin.md
+    - 公告/ 拙见: OldTouch/ANN/20200222-ZQ42-ANN-IMHO.md
+    - 公告/ 钩陈: OldTouch/ANN/20200222-ZQ42-ANN-historic.md
+    - PRESSone: OldTouch/ANN/20170910-pressone.md
+  - 乃木坂46:
+    - OldTouch/NGZK46/index.md
+    - 紫☆S5: OldTouch/NGZK46/20250520-nnnewstar.md
   - 钩陈/ 温总的语速...: OldTouch/20210807-OldTouch-APISIX.md
   - 钩陈/ 什么是程序媛?: OldTouch/20200304-ZoomQuiet-OldTouch-380.md
   - 钩陈/ 被jianshu认证了: OldTouch/20200227-ZoomQuiet-OldTouch-jianshu.md
