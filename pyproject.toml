@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "feedgen>=1.0.0",
     "invoke>=2.2.0",
+    "jieba>=0.42.1",
     "jinja2>=3.1.6",
     "loguru>=0.7.3",
     "mkdocs>=1.6.1",

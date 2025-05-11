@@ -39,6 +39,9 @@ theme:
 plugins:
 - git-authors
 - rss
+- search:
+    lang: zh
+    jieba_dict: ./jieba_dict.small.txt
 markdown_extensions:
 - toc:
     toc_depth: '3'
@@ -148,7 +151,6 @@ nav:
     - 紫☆S5: OldTouch/NGZK46/20250520-nnnewstar.md
   - 钩陈/ 温总的语速...: OldTouch/20210807-OldTouch-APISIX.md
   - 钩陈/ 什么是程序媛?: OldTouch/20200304-ZoomQuiet-OldTouch-380.md
-  - 钩陈/ 被jianshu认证了: OldTouch/20200227-ZoomQuiet-OldTouch-jianshu.md
   - 钩陈/ CPUG故事: OldTouch/20200226-ZoomQuiet-OldTouch-CPUG.md
   - 钩陈/ 掠过 文化社区: OldTouch/20200225-ZoomQuiet-OldTouch-booking.md
   - 拙见/ 四处 箴言断喝: OldTouch/20200225-ZoomQuiet-OldTouch-DebugUself.md
@@ -178,6 +180,7 @@ nav:
   - 如何安定进入 M1maxMBP: Pythonic/20211114-M1max-re-inti-MBP.md
   - VNC回归轻松: Pythonic/20200704-easy-vnc.md
   - 拙见/ DNS之殇: Pythonic/20200331-ZoomQuiet-MurMur-dnsad.md
+  - 钩陈/ 被jianshu认证了: Pythonic/20200227-ZoomQuiet-OldTouch-jianshu.md
   - Elixir 中列出 Map 中值键对的折腾...: Pythonic/20200108-ex-map-enum.md
   - 用 DSL 们构筑商用系统: Pythonic/20170827-DSLs-atop-openrety.md
   - 如何将 ipynb 发布到 blog 中?: Pythonic/20141127-ipynb-into-blog.md
