@@ -200,6 +200,7 @@ nav:
   - Pythonic/index.md
   - 蟒样@2025:
     - Pythonic/25/index.md
+    - CC 中的 gh-issue 工作流: Pythonic/25/20250615-claude-code-gh-flow.md
     - 思维图谱矢量化: Pythonic/25/20250510-graphivz-svg.md
   - 蟒样@2024:
     - Pythonic/24/index.md
