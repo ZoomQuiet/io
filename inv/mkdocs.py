@@ -184,7 +184,8 @@ def flush(c):
                         nav.append({item: sub_nav})
                 else:
                     nav.append({item: sub_nav})
-
+    #LOG.info(f"nav: {nav}")
+    #return None
     # 读取现有配置
     with open(_yaml, 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
