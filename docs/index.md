@@ -9,13 +9,13 @@
 > :::..
 
 
++ <a href='Weekly/25/20250806-693/'>上周蠎快讯 #693</a>
 + <a href='Weekly/25/20250730-692/'>上周蠎快讯 #692</a>
 + <a href='Weekly/25/20250723-691/'>上周蠎快讯 #691</a>
 + <a href='MurMur/25/20250721-IMHO/'>咩`架构感`嗦..</a>
 + <a href='Weekly/25/20250716-690/'>上周蠎快讯 #690</a>
 + <a href='Weekly/25/20250709-689/'>上周蠎快讯 #689</a>
 + <a href='Weekly/25/20250701-688/'>上周蠎快讯 #688</a>
-+ <a href='Pythonic/25/20250629-ai-chip-design-feasibility-report/'>如何构建全 AI 芯片设计公司?</a>
 
 > ..:::
 
