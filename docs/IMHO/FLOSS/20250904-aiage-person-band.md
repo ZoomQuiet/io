@@ -2,6 +2,9 @@
 朋友推荐这一关键个人发展心法:
 [Afraid AI will replace you? Watch This. - YouTube](https://www.youtube.com/watch?v=HxTjtp5WSUM)
 
+
+![ai.age-person-band](20250904-aiage-person-band.png)
+
 吻合自己一直以来对大V 的观感:
 
 > ...每个人都有独特的才能和兴趣，这些构成了他们的身份。通过投入时间和技能，我们可以在这些基础上建立自信，并实现自我成长与发展。
