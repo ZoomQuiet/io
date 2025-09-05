@@ -9,13 +9,13 @@
 > :::..
 
 
++ <a href='MurMur/25/20250905-vibe101coding/'>咩是 Vibe coding 的 vibe?</a>
 + <a href='IMHO/FLOSS/20250904-aiage-person-band/'>AI时代的个人品牌</a>
 + <a href='MurMur/25/20250903-vibe-anything/'>知识付费和 vibe building</a>
 + <a href='Weekly/25/20250903-697/'>上周蠎快讯 #697</a>
 + <a href='Weekly/25/20250827-696/'>上周蠎快讯 #696</a>
 + <a href='Weekly/25/20250820-695/'>上周蠎快讯 #695</a>
 + <a href='Weekly/25/20250813-694/'>上周蠎快讯 #694</a>
-+ <a href='Weekly/25/20250806-693/'>上周蠎快讯 #693</a>
 
 > ..:::
 
