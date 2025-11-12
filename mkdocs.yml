@@ -97,6 +97,7 @@ nav:
   - MurMur/index.md
   - 呢喃@2025:
     - MurMur/25/index.md
+    - Google vs. FFmpeg: MurMur/25/20251111-gemini-vs-ffmpeg.md
     - AI 和内容的价值关系?: MurMur/25/20251110-xqa-good-taste.md
     - 创业公司有什么品质算是靠谱的？: MurMur/25/20251108-xqa-kaopulity.md
     - 咩是 Vibe coding 的 vibe?: MurMur/25/20250905-vibe101coding.md
@@ -215,6 +216,7 @@ nav:
   - Pythonic/index.md
   - 蟒样@2025:
     - Pythonic/25/index.md
+    - debain 下轻量桌面: Pythonic/25/20251111-claude-vnc-debain-vpn.md
     - 如何构建全 AI 芯片设计公司?: Pythonic/25/20250629-ai-chip-design-feasibility-report.md
     - CC 中的 gh-issue 工作流: Pythonic/25/20250615-claude-code-gh-flow.md
     - 思维图谱矢量化: Pythonic/25/20250510-graphivz-svg.md
@@ -247,7 +249,8 @@ nav:
   - Weekly/index.md
   - 2025 蟒周刊:
     - Weekly/25/index.md
-    - '上周蠎快讯 25w44 #720': Weekly/25/20251105-w44.md
+    - '上周蠎快讯 25w44 #721': Weekly/25/20251112-w44.md
+    - '上周蠎快讯 25w43 #720': Weekly/25/20251105-w43.md
     - '上周蠎快讯 #706': Weekly/25/20251029-w43.md
     - '上周蠎快讯 #705': Weekly/25/20251022-w42.md
     - '上周蠎快讯 #704': Weekly/25/20251015-w41.md
