@@ -9,7 +9,7 @@
 > :::..
 
 
-+ <a href='Weekly/25/20251114-w45/'>上周蠎快讯 25w44 #722</a>
++ <a href='Weekly/25/20251114-w45/'>上周蠎快讯 25w45 #722</a>
 + <a href='Weekly/25/20251112-w44/'>上周蠎快讯 25w44 #721</a>
 + <a href='MurMur/25/20251111-gemini-vs-ffmpeg/'>Google vs. FFmpeg</a>
 + <a href='Pythonic/25/20251111-claude-vnc-debain-vpn/'>debain 下轻量桌面</a>
