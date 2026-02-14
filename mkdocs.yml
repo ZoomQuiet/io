@@ -10,6 +10,7 @@ theme:
   name: material
   language: zh
   custom_dir: _theme/material
+  font: false
   palette:
     scheme: default
     primary: blue grey
@@ -362,3 +363,5 @@ nav:
     - 上周蠎快讯 2024/3: Weekly/24/20240121-w03.md
     - 上周蠎快讯 2024/2: Weekly/24/20240114-w02.md
     - 上周蠎快讯 2024/1: Weekly/24/20240107-w01.md
+- reports:
+  - 工程报告：禁用 Google Fonts 并迁移构建到 GitHub Actions: reports/250214_1_disable-google-fonts-migrate-to-gha.md
