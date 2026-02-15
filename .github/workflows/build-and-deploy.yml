@@ -7,7 +7,6 @@ on:
     paths-ignore:
       - 'site/**'      # 避免 site/ 目录变更触发无限循环
       - 'docs/reports/**'  # 报告文件变更不触发重建
-      - '.github/workflows/**'  # workflow 文件变更不触发（可选）
   workflow_dispatch:   # 保留手动触发能力
 
 concurrency:
