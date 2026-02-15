@@ -57,7 +57,7 @@ CI 流程：
 
 ## 项目优化
 
-### 2026-02-15: CI/CD 工作流修复
+### 2026-02-15: CI/CD 工作流修复 ✅
 
 **问题**: GitHub Actions 持续构建失败 ([run #14163174736](https://github.com/zoom-quiet/io/actions/runs/14163174736))
 
