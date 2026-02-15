@@ -2,7 +2,7 @@
 
 大妈的主页 - 基于 MkDocs Material 构建的静态网站。
 
-[![Deploy](https://github.com/ZoomQuiet/io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ZoomQuiet/io/actions/workflows/deploy.yml)
+[![Build and Deploy](https://github.com/ZoomQuiet/io/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/ZoomQuiet/io/actions/workflows/build-and-deploy.yml)
 
 ## 技术栈
 
@@ -56,6 +56,23 @@ CI 流程：
 4. 自动提交 `site/` 目录变更
 
 ## 项目优化
+
+### 2026-02-15: CI/CD 工作流修复
+
+**问题**: GitHub Actions 持续构建失败 ([run #14163174736](https://github.com/zoom-quiet/io/actions/runs/14163174736))
+
+**根本原因**: 工作流配置与项目类型不匹配
+- 远程配置是 **mdBook (Rust)** 工作流
+- 实际项目是 **MkDocs (Python)** 项目
+
+**解决方案**:
+- ✅ 统一工作流文件名为 `build-and-deploy.yml`
+- ✅ 配置 MkDocs 专用构建流程 (Python 3.13 + uv)
+- ✅ 使用 `uv run inv upd` 执行构建
+
+**效果**: CI/CD 恢复正常，推送即自动构建
+
+详见 Issue: [#1](https://github.com/zoom-quiet/io/issues/1)
 
 ### 2025-02-14: 性能优化与 CI 迁移
 
