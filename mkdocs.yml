@@ -96,6 +96,9 @@ nav:
   - 探讨 信息化社会中 中国传统思想的作用: IMHO/19980101-chinese4internet.md
 - 呢喃:
   - MurMur/index.md
+  - 呢喃@2026:
+    - MurMur/26/index.md
+    - 有关电影精品时代分布的暴论: MurMur/26/20260615-mov-greatting.md
   - 呢喃@2025:
     - MurMur/25/index.md
     - Google vs. FFmpeg: MurMur/25/20251111-gemini-vs-ffmpeg.md
@@ -215,6 +218,9 @@ nav:
   - 如何从 Jekyll 转进入 Pelican: OldTouch/20131219-jekyll2pelican.md
 - Pythonic:
   - Pythonic/index.md
+  - 蟒样@2026:
+    - Pythonic/26/index.md
+    - 从迅雷到 Pikpak .. 一次可以说流畅的迁移: Pythonic/26/20260617-thunder-motrix-pikpak.md
   - 蟒样@2025:
     - Pythonic/25/index.md
     - debain 下轻量桌面: Pythonic/25/20251111-claude-vnc-debain-vpn.md
@@ -250,6 +256,24 @@ nav:
   - Weekly/index.md
   - 2026 蟒周刊:
     - Weekly/26/index.md
+    - '上周蠎超赞 26w24 #525': Weekly/26/20260621-w24.md
+    - '上周蠎超赞 26w23 #524': Weekly/26/20260614-w23.md
+    - '上周蠎超赞 26w22 #523': Weekly/26/20260607-w22.md
+    - '上周蠎超赞 26w21 #522': Weekly/26/20260531-w21.md
+    - '上周蠎超赞 26w20 #521': Weekly/26/20260524-w20.md
+    - '上周蠎超赞 26w19 #520': Weekly/26/20260516-w19.md
+    - '上周蠎超赞 26w18 #519': Weekly/26/20260502-w18.md
+    - '上周蠎超赞 26w17 #518': Weekly/26/20260502-w17.md
+    - '上周蠎超赞 26w16 #517': Weekly/26/20260426-w16.md
+    - '上周蠎超赞 26w15 #516': Weekly/26/20260418-w15.md
+    - '上周蠎超赞 26w14 #515': Weekly/26/20260412-w14.md
+    - '上周蠎超赞 26w13 #514': Weekly/26/20260404-w13.md
+    - '上周蠎超赞 26w12 #513': Weekly/26/20260328-w12.md
+    - '上周蠎超赞 26w11 #512': Weekly/26/20260321-w11.md
+    - '上周蠎超赞 26w10 #511': Weekly/26/20260313-w10.md
+    - '上周蠎超赞 26w09 #510': Weekly/26/20260307-w09.md
+    - '上周蠎超赞 26w08 #509': Weekly/26/20260228-w08.md
+    - '上周蠎超赞 26w07 #508': Weekly/26/20260222-w07.md
     - '上周蠎超赞 26w06 #507': Weekly/26/20260215-w06.md
     - '上周蠎超赞 26w05 #506': Weekly/26/20260208-w05.md
     - '上周蠎超赞 26w04 #505': Weekly/26/20260131-w04.md
