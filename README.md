@@ -9,7 +9,7 @@
 - **构建工具**: [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - **Python 管理**: [uv](https://docs.astral.sh/uv/)
 - **任务运行**: [Invoke](https://www.pyinvoke.org/)
-- **部署**: GitHub Pages (源: `site/` 目录)
+- **部署**: Cloudflare Pages（GitHub Actions 构建后通过 Wrangler 发布 `site/`）
 - **CI/CD**: GitHub Actions
 
 ## 快速开始
@@ -53,7 +53,13 @@ CI 流程：
 1. 检出代码
 2. 安装 uv + Python 依赖
 3. 运行 `inv upd` 构建站点
-4. 自动提交 `site/` 目录变更
+4. 通过 Wrangler 将本次构建的 `site/` 发布到 Cloudflare Pages
+5. 自动提交 `site/` 目录变更作为生成物归档
+
+需要在 GitHub 仓库配置：
+
+- Secret: `CLOUDFLARE_API_TOKEN`
+- Variable: `CLOUDFLARE_ACCOUNT_ID`
 
 ## 项目优化
 
