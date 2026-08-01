@@ -9,13 +9,13 @@
 > :::..
 
 
++ <a href='Weekly/26/20260801-w30/'>上周蠎超赞 26w30 #531</a>
++ <a href='Weekly/26/20260726-w29/'>上周蠎超赞 26w29 #530</a>
 + <a href='Weekly/26/20260718-w28/'>上周蠎超赞 26w28 #529</a>
 + <a href='Weekly/26/20260712-w27/'>上周蠎超赞 26w27 #528</a>
 + <a href='Weekly/26/20260704-w26/'>上周蠎超赞 26w26 #527</a>
 + <a href='Weekly/26/20260627-w25/'>上周蠎超赞 26w25 #526</a>
 + <a href='Weekly/26/20260621-w24/'>上周蠎超赞 26w24 #525</a>
-+ <a href='Pythonic/26/20260617-thunder-motrix-pikpak/'>从迅雷到 Pikpak .. 一次可以说流畅的迁移</a>
-+ <a href='MurMur/26/20260615-mov-greatting/'>有关电影精品时代分布的暴论</a>
 
 > ..:::
 
