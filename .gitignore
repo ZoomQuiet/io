@@ -9,3 +9,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Wrangler configuration (contains sensitive data)
+wrangler.toml
