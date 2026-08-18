@@ -12,3 +12,8 @@ wheels/
 
 # Wrangler configuration (contains sensitive data)
 wrangler.toml
+
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock

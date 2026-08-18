@@ -1,0 +1,141 @@
+# ZoomQuiet.io Hugo 配置
+# 基于 Issue #148 决策:
+# - PaperMod 默认首页
+# - Giscus 评论 (URL mapping)
+# - PaperMod 内置搜索
+# - Hugo 内置 RSS
+# - 不使用多语言
+# - URL 完全保持不变 (disablePathToLower = true)
+
+baseURL = "https://zoomquiet.io/"
+languageCode = "zh-cn"
+title = "ZoomQuiet.io"
+theme = "PaperMod"
+contentDir = "content"
+disablePathToLower = true
+hasCJKLanguage = true
+enableRobotsTXT = true
+paginate = 4
+timeZone = "Asia/Shanghai"
+
+[frontmatter]
+date = [":filename", ":default"]
+
+[taxonomies]
+  tag = "tags"  # 仅启用 Tags，去掉默认 categories
+
+[markup.goldmark.renderer]
+unsafe = true  # 保留旧 MkDocs 内容中的 Raw HTML
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  title = "ZoomQuiet.io"
+  description = "大妈的主页"
+  author = "ZoomQuiet"
+  DateFormat = "2006-01-02"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+  mainSections = ["Weekly", "Pythonic", "MurMur", "OldTouch", "IMHO"]
+
+  [params.label]
+    text = "ZoomQuiet.io"
+
+  [params.homeInfoParams]
+    Title = "ZoomQuiet.io"
+    Content = "大妈的主页 | 无数次迁移后…"
+
+  [params.assets]
+    disableFingerprinting = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  identifier = "home"
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "大妈"
+  url = "/About/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "imho"
+  name = "拙见"
+  url = "/IMHO/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "murmur"
+  name = "呢喃"
+  url = "/MurMur/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "oldtouch"
+  name = "钩陈"
+  url = "/OldTouch/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "pythonic"
+  name = "Pythonic"
+  url = "/Pythonic/"
+  weight = 6
+
+[[menu.main]]
+  identifier = "camp"
+  name = "蟒营®"
+  url = "/101camp/"
+  weight = 7
+
+[[menu.main]]
+  identifier = "weekly"
+  name = "周刊"
+  url = "/Weekly/"
+  weight = 8
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archive"
+  url = "/archives/"
+  weight = 9
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 11
