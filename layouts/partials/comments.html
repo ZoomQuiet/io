@@ -1,0 +1,19 @@
+{{- /* Giscus 评论区注入 (覆盖 PaperMod 空 comments 模板) */ -}}
+{{- with site.Params.giscus -}}
+<div class="giscus" id="giscus-comments"></div>
+<script src="https://giscus.app/client.js"
+        data-repo="{{ .repo }}"
+        data-repo-id="{{ .repoId | default "" }}"
+        data-category="{{ .category | default "Announcements" }}"
+        data-category-id="{{ .categoryId | default "" }}"
+        data-mapping="{{ .mapping | default "pathname" }}"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="{{ .theme | default "preferred_color_scheme" }}"
+        data-lang="{{ .lang | default "zh-CN" }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{{- end }}

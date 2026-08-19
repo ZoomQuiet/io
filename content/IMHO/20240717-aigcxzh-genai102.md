@@ -1,5 +1,9 @@
 ---
-date: 2024-07-17
+title: "《我这样用GenAI》"
+summary: "AIGCxChina发起「我这样用GenAI」主题共创投稿"
+date: "2024-07-17"
+tags:
+  - "IMHO"
 ---
 
 # 《我这样用GenAI》

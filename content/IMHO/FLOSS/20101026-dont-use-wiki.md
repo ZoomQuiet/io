@@ -1,5 +1,10 @@
 ---
-date: 2010-10-26
+title: "wiki 不是任何人都可以用的!"
+summary: ""
+date: "2010-10-26"
+tags:
+  - "IMHO"
+  - "FLOSS"
 ---
 
 # wiki 不是任何人都可以用的!

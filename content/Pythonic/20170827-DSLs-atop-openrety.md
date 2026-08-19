@@ -1,5 +1,9 @@
 ---
-date: 2017-08-27
+title: "用 DSL 们构筑商用系统"
+summary: ""
+date: "2017-08-27"
+tags:
+  - "Pythonic"
 ---
 
 # 用 DSL 们构筑商用系统

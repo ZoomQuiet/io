@@ -1,5 +1,9 @@
 ---
-date: 2013-10-23
+title: "Python 列表为毛从0开始索引?"
+summary: ""
+date: "2013-10-23"
+tags:
+  - "Pythonic"
 ---
 
 # Python 列表为毛从0开始索引?

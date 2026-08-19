@@ -1,5 +1,10 @@
 ---
-date: 2024-11-11
+title: "PJ.MIAOLAI D2"
+summary: "从未设想过会买的神奇小东西"
+date: "2024-11-11"
+tags:
+  - "Pythonic"
+  - "24"
 ---
 
 # PJ.MIAOLAI D2

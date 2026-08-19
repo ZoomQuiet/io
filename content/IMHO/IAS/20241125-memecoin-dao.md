@@ -1,5 +1,10 @@
 ---
-date: 2024-11-25
+title: "memeCOIN+DAO?"
+summary: "一个全新的全民上市渠道"
+date: "2024-11-25"
+tags:
+  - "IMHO"
+  - "IAS"
 ---
 
 # memeCOIN+DAO?

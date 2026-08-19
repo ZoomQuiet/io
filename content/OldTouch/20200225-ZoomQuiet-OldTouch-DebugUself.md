@@ -1,5 +1,9 @@
 ---
-date: 2020-02-25
+title: "拙见/ 四处 箴言断喝"
+summary: "ZoomQuiet 在以往各种场景中的嗯哼"
+date: "2020-02-25"
+tags:
+  - "OldTouch"
 ---
 
     Title: 拙见/ 四处 箴言断喝

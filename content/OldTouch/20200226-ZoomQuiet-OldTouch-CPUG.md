@@ -1,5 +1,9 @@
 ---
-date: 2020-02-26
+title: "钩陈/ CPUG故事"
+summary: "普通老 Pythoneer 行者的回忆..."
+date: "2020-02-26"
+tags:
+  - "OldTouch"
 ---
 
     Title: 钩陈/ CPUG故事

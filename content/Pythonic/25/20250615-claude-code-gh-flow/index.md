@@ -1,3 +1,12 @@
+---
+title: "CC 中的 gh-issue 工作流"
+summary: "CC: Claude Code"
+date: "2025-06-15"
+tags:
+  - "Pythonic"
+  - "25"
+---
+
 # CC 中的 gh-issue 工作流
 > CC: Claude Code
 

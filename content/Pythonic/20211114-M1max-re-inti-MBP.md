@@ -1,5 +1,9 @@
 ---
-date: 2021-11-14
+title: "如何安定进入 M1maxMBP"
+summary: ""
+date: "2021-11-14"
+tags:
+  - "Pythonic"
 ---
 
 

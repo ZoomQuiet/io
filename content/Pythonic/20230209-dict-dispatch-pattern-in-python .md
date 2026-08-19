@@ -1,6 +1,10 @@
 ---
-date: 2023-02-09
-url: /Pythonic/20230209-dict-dispatch-pattern-in-python /
+title: "Python 中的字典调度模式"
+summary: ""
+date: "2023-02-09"
+tags:
+  - "Pythonic"
+url: "/Pythonic/20230209-dict-dispatch-pattern-in-python /"
 ---
 
 # Python 中的字典调度模式

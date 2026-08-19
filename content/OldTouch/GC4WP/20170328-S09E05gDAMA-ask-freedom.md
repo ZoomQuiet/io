@@ -1,5 +1,10 @@
 ---
-date: 2017-03-28
+title: "自由问自疏"
+summary: "代替那存在着阶级和阶级对立的资产阶级旧社会的，将是这样一个联合体，在那里，每个人的自由发展是一切人的自由发展的条件 In place of the old bourgeois society with its classes and class conflicts there will be an association in which the free development of each is the condition for the free development of all. 只有自证不缺钱，才能从银行借到钱，而有经济能力的人必不滥用那借贷。 只有内心渴望劳动，才能拥有随时不"
+date: "2017-03-28"
+tags:
+  - "OldTouch"
+  - "GC4WP"
 ---
 
 # 自由问自疏

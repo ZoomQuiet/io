@@ -1,5 +1,10 @@
 ---
-date: 2024-09-18  # 在文件开头添加日期元数据
+date: "2024-09-18"
+title: "9.18 UBNT+Cloudflared"
+summary: "gao.bo 的习惯传染"
+tags:
+  - "Pythonic"
+  - "24"
 ---
 
 # 9.18 UBNT+Cloudflared

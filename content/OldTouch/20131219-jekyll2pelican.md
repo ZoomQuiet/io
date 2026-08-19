@@ -1,5 +1,9 @@
 ---
-date: 2013-12-19
+title: "如何从 Jekyll 转进入 Pelican"
+summary: ""
+date: "2013-12-19"
+tags:
+  - "OldTouch"
 ---
 
 # 如何从 Jekyll 转进入 Pelican

@@ -15,8 +15,11 @@ contentDir = "content"
 disablePathToLower = true
 hasCJKLanguage = true
 enableRobotsTXT = true
-paginate = 4
 timeZone = "Asia/Shanghai"
+
+[pagination]
+  pagerSize = 4
+  path = "page"
 
 [frontmatter]
 date = [":filename", ":default"]
@@ -48,19 +51,41 @@ home = ["HTML", "RSS", "JSON"]
   UseHugoToc = true
   disableSpecial1stPost = false
   disableScrollToTop = false
-  comments = false
+  comments = true   # 每篇文章页 Inject Giscus
   hidemeta = false
   hideSummary = false
   showtoc = true
   tocopen = false
-  mainSections = ["Weekly", "Pythonic", "MurMur", "OldTouch", "IMHO"]
+  mainSections = ["weekly", "pythonic", "murmur", "oldtouch", "imho"]  # Hugo .Type 全小写
 
   [params.label]
     text = "ZoomQuiet.io"
 
   [params.homeInfoParams]
     Title = "ZoomQuiet.io"
-    Content = "大妈的主页 | 无数次迁移后…"
+    Content = """
+> 无数次迁移后的私人官网
+
+**大妈的私人网站**
+- 最早注册 zoomquiet.org，PHP BBS 系统发布
+- 后经 pyblosoxm (t2t)、各种 markdoc wiki、Google/GitHub Pages
+- 最终选择 zoomquiet.io 作为私人官网
+- 曾是完全图片为主的关系图谱，无法被 Google AdSense 收录
+
+**重新汇集私人互联网记忆**
+- 用 mdBook / Hugo 重构发布最轻量级网站
+- 将所有以往文章汇聚于此
+- 关系图谱首页 → [mm.zoomquiet.io](https://mm.zoomquiet.io)
+"""
+
+  [params.giscus]
+    repo = "ZoomQuiet/io"
+    repoId = ""
+    category = "Announcements"
+    categoryId = ""
+    mapping = "pathname"
+    lang = "zh-CN"
+    theme = "preferred_color_scheme"
 
   [params.assets]
     disableFingerprinting = true

@@ -1,3 +1,12 @@
+---
+title: "咩是 Vibe coding 的 vibe?"
+summary: "Liuns 曰了:"
+date: "2025-09-05"
+tags:
+  - "MurMur"
+  - "25"
+---
+
 # 咩是 Vibe coding 的 vibe?
 
 > Liuns 曰了:

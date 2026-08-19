@@ -1,5 +1,10 @@
 ---
-date: 2017-12-01
+title: "GC4L01E01🐙从前的现在"
+summary: "一个普通人在时间中的挣扎"
+date: "2017-12-01"
+tags:
+  - "OldTouch"
+  - "SiFi"
 ---
 
 # GC4L01E01🐙从前的现在

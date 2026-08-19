@@ -47,45 +47,118 @@ bundle docs/MurMur/25/20250905-vibe101coding.md 20250905-vibe101coding-liuns.jpg
 bundle docs/Pythonic/24/20240918-ubnt-cloudflared.md 20240918-ubnt-cloudflared.jpg
 bundle docs/Pythonic/25/20250615-claude-code-gh-flow.md 20250615-claude-code-gh-flow-ccusage.jpg 20250615-claude-code-gh-flow-mermaid.jpg
 
-echo "==> 注入最小 front matter (日期/特殊 URL)"
+echo "==> 注入 front matter (日期/特殊URL/标题/概要/Tags)"
 python3 - <<'PY'
-import pathlib, re, datetime
+import pathlib, re, datetime, json
+
 root = pathlib.Path('content')
 forced_urls = {
     'Pythonic/20230209-dict-dispatch-pattern-in-python .md': '/Pythonic/20230209-dict-dispatch-pattern-in-python /',
 }
 date_pat = re.compile(r'^(?:(\d{4})(\d{2})(\d{2})|(\d{2})(\d{2})(\d{2}))-')
-for md in root.rglob('*.md'):
-    rel = md.relative_to(root).as_posix()
-    text = md.read_text(encoding='utf-8', errors='replace')
-    fm = {}
-    body = text
+title_pat = re.compile(r'^\s*#\s+(.+?)\s*$', re.MULTILINE)
+
+
+def parse(text):
+    fm, body = {}, text
     if text.startswith('---'):
         parts = text.split('---', 2)
         if len(parts) >= 3:
             for line in parts[1].splitlines():
                 if ':' in line:
                     k, v = line.split(':', 1)
-                    fm[k.strip()] = v.strip()
+                    v = re.split(r'\s+#', v, 1)[0].strip()  # 去掉 YAML 行内注释
+                    fm[k.strip()] = v
             body = parts[2]
             if body.startswith('\n'):
                 body = body[1:]
-    m = date_pat.match(md.name)
-    if m and 'date' not in fm:
-        if m.group(1):
-            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
-        else:
-            y, mo, d = int(m.group(4)) + 2000, int(m.group(5)), int(m.group(6))
-        try:
-            fm['date'] = datetime.date(y, mo, d).isoformat()
-        except ValueError:
-            pass
+    return fm, body
+
+
+def add_date(fm, key, y, mo, d):
+    try:
+        fm['date'] = datetime.date(y, mo, d).isoformat()
+    except ValueError:
+        pass
+
+
+def match_date(s):
+    m = date_pat.match(s)
+    if not m:
+        return None
+    if m.group(1):
+        return (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+    return (int(m.group(4)) + 2000, int(m.group(5)), int(m.group(6)))
+
+
+def extract_title_summary(body):
+    title, summary = None, []
+    mt = title_pat.search(body)
+    if mt:
+        title = mt.group(1).strip()
+    pre = body.split('\n## ', 1)[0]
+    for line in pre.splitlines():
+        ls = line.strip()
+        if not ls.startswith('>'):
+            continue
+        s = re.sub(r'^>\s?', '', ls)
+        # 跳过纯装饰性引用（如 '..' 分隔线）
+        if len(s) < 3 or not any(ch.isalnum() for ch in s):
+            continue
+        summary.append(s)
+    return title, ' '.join(summary)[:300]
+
+
+for md in root.rglob('*.md'):
+    rel = md.relative_to(root).as_posix()
+    name = md.name
+    if name == '_index.md':
+        continue  # 真实 section/主页，非文章
+    fm, body = parse(md.read_text(encoding='utf-8', errors='replace'))
+
+    title, summary = extract_title_summary(body)
+    if title:
+        fm.setdefault('title', title)
+    if summary:
+        fm.setdefault('summary', summary)
+    else:
+        fm.setdefault('summary', '')
+
+    if name == 'index.md':
+        # Page Bundle：日期/标签从父目录名取
+        parent = rel.split('/')[-2] if '/' in rel else ''
+        tags = rel.split('/')[:-2]
+        d = match_date(parent)
+        key_name = parent
+    else:
+        d = match_date(name)
+        tags = rel.split('/')[:-1]
+        key_name = name
+
+    if d and 'date' not in fm:
+        add_date(fm, 'date', *d)
+    if tags and 'tags' not in fm:
+        fm['tags'] = tags
     if rel in forced_urls:
         fm['url'] = forced_urls[rel]
-    if fm:
-        yaml = '---\n' + ''.join(f'{k}: {v}\n' for k, v in fm.items()) + '---\n\n'
-        md.write_text(yaml + body, encoding='utf-8')
+
+    lines = ['---']
+    for k, v in fm.items():
+        if isinstance(v, list):
+            lines.append(f'{k}:')
+            for t in v:
+                lines.append(f'  - {json.dumps(t, ensure_ascii=False)}')
+        else:
+            lines.append(f'{k}: {json.dumps(v, ensure_ascii=False)}')
+    lines.append('---')
+    md.write_text('\n'.join(lines) + '\n\n' + body, encoding='utf-8')
 PY
+
+echo "==> 重写内容根 _index.md 为空（首页自述改由 [params.homeInfoParams] 提供）"
+cat > content/_index.md <<'EOF'
+---
+---
+EOF
 
 echo "==> 创建 reports 占位（保持原站点 /reports/ 无独立首页）"
 mkdir -p content/reports

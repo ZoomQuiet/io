@@ -1,5 +1,10 @@
 ---
-date: 2017-12-12
+title: "GC4L02E05🐙汉语引进的"
+summary: ""
+date: "2017-12-12"
+tags:
+  - "OldTouch"
+  - "GC4WP"
 ---
 
 # GC4L02E05🐙汉语引进的

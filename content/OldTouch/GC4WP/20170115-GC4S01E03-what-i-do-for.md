@@ -1,5 +1,10 @@
 ---
-date: 2017-01-15
+title: "GC4S01E03:俺是干嘛的?!"
+summary: ""
+date: "2017-01-15"
+tags:
+  - "OldTouch"
+  - "GC4WP"
 ---
 
 # GC4S01E03:俺是干嘛的?!

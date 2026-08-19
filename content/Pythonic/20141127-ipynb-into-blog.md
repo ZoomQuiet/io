@@ -1,5 +1,9 @@
 ---
-date: 2014-11-27
+title: "如何将 ipynb 发布到 blog 中?"
+summary: ""
+date: "2014-11-27"
+tags:
+  - "Pythonic"
 ---
 
 # 如何将 ipynb 发布到 blog 中?

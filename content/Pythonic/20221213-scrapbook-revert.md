@@ -1,5 +1,9 @@
 ---
-date: 2022-12-13
+title: "ScrapBook 在 M1macOS 上恢复"
+summary: ""
+date: "2022-12-13"
+tags:
+  - "Pythonic"
 ---
 
 # ScrapBook 在 M1macOS 上恢复

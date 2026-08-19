@@ -1,5 +1,9 @@
 ---
-date: 2014-01-26
+title: "如何自在的折腾QPy"
+summary: ""
+date: "2014-01-26"
+tags:
+  - "Pythonic"
 ---
 
 # 如何自在的折腾QPy

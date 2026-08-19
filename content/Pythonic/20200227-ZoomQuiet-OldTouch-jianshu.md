@@ -1,5 +1,9 @@
 ---
-date: 2020-02-27
+title: "钩陈/ 被jianshu认证了"
+summary: "普通老程序猿一则事件回响..."
+date: "2020-02-27"
+tags:
+  - "Pythonic"
 ---
 
     Title: 钩陈/ 被jianshu认证了

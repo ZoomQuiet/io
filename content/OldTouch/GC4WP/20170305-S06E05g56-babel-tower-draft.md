@@ -1,5 +1,10 @@
 ---
-date: 2017-03-05
+title: "S06E05g56: 废稿"
+summary: ""
+date: "2017-03-05"
+tags:
+  - "OldTouch"
+  - "GC4WP"
 ---
 
 # S06E05g56: 废稿

@@ -1,5 +1,10 @@
 ---
-date: 2024-10-29
+title: "Garage 作私人 S3 服务"
+summary: "以便自制图床..."
+date: "2024-10-29"
+tags:
+  - "Pythonic"
+  - "24"
 ---
 
       + [10.29 私人S3](Pythonic/24/20241029-intra-s3-garage.md)

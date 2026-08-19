@@ -1,5 +1,9 @@
 ---
-date: 2020-03-31
+title: "拙见/ DNS之殇"
+summary: "普通程序老猿一则感叹..."
+date: "2020-03-31"
+tags:
+  - "Pythonic"
 ---
 
 # 拙见/ DNS之殇

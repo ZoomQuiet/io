@@ -1,5 +1,10 @@
 ---
-date: 2025-04-07
+title: "Follow 订阅源"
+summary: "This message is used to verify that this feed (feedId:132063759427328000) belongs to me (userId:68573755406424064). Join me in enjoying the next generation information browser https://follow.is."
+date: "2025-04-07"
+tags:
+  - "OldTouch"
+  - "ANN"
 ---
 
 # Follow 订阅源

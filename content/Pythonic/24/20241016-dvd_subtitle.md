@@ -1,5 +1,10 @@
 ---
-date: 2024-10-16
+title: "古老的 dvd_subtitle"
+summary: "如何将 dvd_subtitle 转换为 .srt"
+date: "2024-10-16"
+tags:
+  - "Pythonic"
+  - "24"
 ---
 
 # 古老的 dvd_subtitle

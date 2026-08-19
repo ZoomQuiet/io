@@ -1,5 +1,9 @@
 ---
-date: 2014-11-26
+title: "十大早该知道的Python技巧"
+summary: ""
+date: "2014-11-26"
+tags:
+  - "Pythonic"
 ---
 
 # 十大早该知道的Python技巧

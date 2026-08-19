@@ -1,5 +1,10 @@
 ---
-date: 2024-09-18
+title: "UBNT+Cloudflared"
+summary: "为了一个安全且自在的内网环境"
+date: "2024-09-18"
+tags:
+  - "IMHO"
+  - "IAS"
 ---
 
 # UBNT+Cloudflared

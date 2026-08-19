@@ -1,5 +1,10 @@
 ---
-date: 2017-02-11
+title: "GC4g56: 和合技~强释"
+summary: ""
+date: "2017-02-11"
+tags:
+  - "OldTouch"
+  - "GC4WP"
 ---
 
 # GC4g56: 和合技~强释

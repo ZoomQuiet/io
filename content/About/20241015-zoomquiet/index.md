@@ -1,3 +1,11 @@
+---
+title: "关于"
+summary: "大妈/ZoomQuiet 使用手册"
+date: "2024-10-15"
+tags:
+  - "About"
+---
+
 # 关于
 > 大妈/ZoomQuiet 使用手册
 

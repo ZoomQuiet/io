@@ -1,5 +1,10 @@
 ---
-date: 2025-11-11
+title: "debain 下轻量桌面"
+summary: "[Opus: 如何安装并从 macOS 远程接入 Debain 的桌面](https://claude.ai/share/bc7de77d-f8b0-41cc-9049-872957371bc7)"
+date: "2025-11-11"
+tags:
+  - "Pythonic"
+  - "25"
 ---
 
 # debain 下轻量桌面
