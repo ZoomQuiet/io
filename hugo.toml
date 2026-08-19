@@ -80,9 +80,9 @@ home = ["HTML", "RSS", "JSON"]
 
   [params.giscus]
     repo = "ZoomQuiet/io"
-    repoId = ""
-    category = "Announcements"
-    categoryId = ""
+    repoId = "R_kgDOOR7V4g"
+    category = "General"
+    categoryId = "DIC_kwDOOR7V4s4Cop9l"
     mapping = "pathname"
     lang = "zh-CN"
     theme = "preferred_color_scheme"
