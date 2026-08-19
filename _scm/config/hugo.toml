@@ -52,6 +52,7 @@ home = ["HTML", "RSS", "JSON"]
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = true   # 每篇文章页 Inject Giscus
+  ShowPageNums = true  # 分页导航按钮追加 x/总数 (PaperMod/ttoos 风格)
   hidemeta = false
   hideSummary = false
   showtoc = true

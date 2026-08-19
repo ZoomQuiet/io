@@ -1,118 +1,164 @@
 # ZoomQuiet.io
 
-大妈的主页 - 基于 MkDocs Material 构建的静态网站。
+大妈的主页（私人官网）— 基于 **Hugo + PaperMod** 构建的静态网站。
 
-[![Build and Deploy](https://github.com/ZoomQuiet/io/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/ZoomQuiet/io/actions/workflows/build-and-deploy.yml)
+- **构建工具**: [Hugo](https://gohugo.io/)（Extended，≥ 0.146）+ [PaperMod](https://github.com/adityatelange/hugo-PaperMod) 主题（已入库）
+- **发布**: Cloudflare Pages，**wrangler 直传 `public/`**（无 CI、无 GH Actions、CF 端不构建）
+- **评论**: Giscus（`ZoomQuiet/comment` 仓库 Discussions，`mapping=url`）
+- **搜索**: PaperMod 内置 Fuse.js（`public/index.json` 预编译）
+- **域名**: `zoomquiet.io`（CF Pages 已 active）
 
 ## 技术栈
 
-- **构建工具**: [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
-- **Python 管理**: [uv](https://docs.astral.sh/uv/)
-- **任务运行**: [Invoke](https://www.pyinvoke.org/)
-- **部署**: Cloudflare Pages（GitHub Actions 构建后通过 Wrangler 发布 `site/`）
-- **CI/CD**: GitHub Actions
+| 组件 | 说明 |
+|------|------|
+| Hugo | 编译 HTML/RSS/JSON（搜索索引） |
+| PaperMod | 主题（`themes/PaperMod/` 入库，离线可构建） |
+| wrangler | 直传 `public/` 到 CF Pages 项目 `io` |
+| Giscus | 评论区（经 CDN，可选） |
+| jieba/fuse | 搜索分词（可选） |
 
-## 快速开始
-
-```bash
-# 克隆仓库
-git clone https://github.com/ZoomQuiet/io.git
-cd io
-
-# 安装依赖
-uv sync
-
-# 本地构建并预览
-uv run inv upd
-```
-
-## 构建系统
-
-### 本地构建
-
-```bash
-# 完整构建（flush + reidx + mkdocs build）
-inv upd
-
-# 单独步骤
-inv flush    # 更新导航配置
-inv reidx    # 更新首页最新文章
-```
-
-### 自动部署（GitHub Actions）
-
-push 到 `main` 分支时自动触发：
-
-```yaml
-on:
-  push:
-    branches: [main]
-```
-
-CI 流程：
-1. 检出代码
-2. 安装 uv + Python 依赖
-3. 运行 `inv upd` 构建站点
-4. 通过 Wrangler 将本次构建的 `site/` 发布到 Cloudflare Pages
-5. 自动提交 `site/` 目录变更作为生成物归档
-
-需要在 GitHub 仓库配置：
-
-- Secret: `CLOUDFLARE_API_TOKEN`
-- Variable: `CLOUDFLARE_ACCOUNT_ID`
-
-## 项目优化
-
-### 2026-02-15: CI/CD 工作流修复 ✅
-
-**问题**: GitHub Actions 持续构建失败 ([run #14163174736](https://github.com/zoom-quiet/io/actions/runs/14163174736))
-
-**根本原因**: 工作流配置与项目类型不匹配
-- 远程配置是 **mdBook (Rust)** 工作流
-- 实际项目是 **MkDocs (Python)** 项目
-
-**解决方案**:
-- ✅ 统一工作流文件名为 `build-and-deploy.yml`
-- ✅ 配置 MkDocs 专用构建流程 (Python 3.13 + uv)
-- ✅ 使用 `uv run inv upd` 执行构建
-
-**效果**: CI/CD 恢复正常，推送即自动构建
-
-详见 Issue: [#1](https://github.com/zoom-quiet/io/issues/1)
-
-### 2025-02-14: 性能优化与 CI 迁移
-
-**问题**: 中国大陆访问慢，Google Fonts 被墙导致阻塞
-
-**解决方案**:
-- ✅ 禁用 Google Fonts (`font: false`)，使用系统默认字体
-- ✅ 构建流程迁移到 GitHub Actions，无需本地操作
-- ✅ 保留本地 `inv upd` 能力用于开发和预览
-
-**效果**: 首屏加载时间从 30-60s 降至 <3s
-
-详见工程报告: [`docs/reports/250214_1_disable-google-fonts-migrate-to-gha.md`](docs/reports/250214_1_disable-google-fonts-migrate-to-gha.md)
-
-## 项目结构
+## 仓库结构（关键路径）
 
 ```
 .
-├── docs/               # 文档源文件
-│   ├── reports/        # 工程报告
-│   ├── About/          # 关于页面
-│   ├── IMHO/           # 拙见文章
-│   ├── MurMur/         # 呢喃随笔
-│   └── ...
-├── site/               # 构建输出（GitHub Pages 源）
-├── _theme/             # 自定义主题
-├── inv/                # Invoke 任务模块
-│   ├── mkdocs.py       # 导航生成
-│   └── latestor.py     # 首页更新
-├── mkdocs.yml          # MkDocs 配置
-├── tasks.py            # 主任务文件
-└── .github/workflows/  # CI/CD 配置
+├── content/                  # Hugo 内容源（权威，写稿在此）
+├── hugo.toml                 # Hugo/PaperMod 配置（权威）
+├── _scm/config/hugo.toml     # 配置副本（与根一致）
+├── _scm/migrate/hugo-migrate.sh  # docs/ -> content/ 一次性迁移
+├── _scm/deploy/hugo-deploy.sh    # 编译 + wrangler 发布
+├── layouts/partials/comments.html # Giscus 注入（字面量声明）
+├── themes/PaperMod/          # 主题（入库）
+├── wrangler.toml             # 部署凭据（gitignore，绝不上传）
+├── docs/                     # 【旧】MkDocs 源码（可删）
+├── site/                     # 【旧】MkDocs 构建产物（可删）
+├── mkdocs*.yml / inv/ / tasks.py / pyproject.toml / uv.lock
+│                            # 【旧】MkDocs/uv 工具链（可删）
+├── _historic/                # 【旧】历史导入归档（视需要保留/迁移）
+└── public/ resources/        # Hugo 生成（gitignore）
 ```
+
+---
+
+## 一、本地安装 Hugo 并撰写初稿 / 预览
+
+任何一台本地机器，只要装有 Hugo（≥ 0.146）即可写稿并本地编译预览：
+
+```bash
+# 1) 安装 Hugo Extended（macOS 两选一）
+#    方式 A: Homebrew
+brew install hugo
+#    方式 B: 官方二进制（选 hugo_extended_*_darwin-universal2 或 arm64）
+#    下载后解压到 $PATH，如 ~/go/bin/hugo
+hugo version   # 确认 >= 0.146
+
+# 2) 克隆仓库（含已入库主题，无需 submodule）
+git clone https://github.com/ZoomQuiet/io.git
+cd io
+
+# 3) 写稿：在 content/<栏目>/<子目录>/ 新建 .md
+#    文件名用日期前缀，便于自动注入日期/分页/标签
+#    content/MurMur/26/20260819-my-draft.md
+
+# 4) 本地编译并预览（自动监听变更）
+hugo server -D --disableFastRender
+
+# 打开 http://localhost:1313 即可实时预览
+```
+
+常用命令：
+
+```bash
+hugo                # 只编译到 public/
+hugo server -D      # 预览（含草稿）
+~/go/bin/hugo --gc --minify   # 正式构建
+```
+
+---
+
+## 二、远程主机（hk0）LLM 辅助：元数据整理 + 编译发布
+
+远程主机是日常发布入口，LLM/Agent 可全程接管。依赖：Hugo + node/wrangler + git + forgejo-cli。
+
+```bash
+# 1) 拉取最新内容
+git pull
+
+# 2) （可选）从 docs/ 转换到 content/
+#    首次/迁移后一般不需要；仅当新增了旧格式 docs/ 内容
+bash _scm/migrate/hugo-migrate.sh
+
+# 3) LLM 辅助整理每个已迁移文件的元数据
+#    - 首行 H1 作 title
+#    - H1 下首个引用作 summary
+#    - 按目录名注入 tags（如 Weekly/26 -> Weekly,26）
+#    缺失项由脚本/LLM 补全，保持 URL 不变
+
+# 4) 编译并发布（一条命令）
+bash _scm/deploy/hugo-deploy.sh   # = hugo --gc --minify && wrangler pages deploy public --project-name=io --branch=main
+
+# 5) 如需回帖 Issue（如 #148）
+fj issue comment 148 -C /opt/src/DAMA --body-file comment.md
+```
+
+发布前务必确保本地 `wrangler.toml` 凭据可用、且 `env` 中无旧 token 遮蔽：
+
+```bash
+unset CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID   # 若被旧值占用
+bash _scm/deploy/hugo-deploy.sh
+```
+
+---
+
+## 三、在新主机部署相同的 wrangler 发布环境
+
+新主机（新的本地机器 / 新的远程服务器）装齐依赖即可接管发布：
+
+```bash
+# 1) 装 Hugo（Extended >= 0.146）
+#    macOS: brew install hugo
+#    Linux/其他: 下载官方 hugo_extended_* 二进制放 $PATH
+hugo version
+
+# 2) 装 Node（含 npx/wrangler）
+#    macOS: brew install node
+node -v
+
+# 3) 克隆仓库
+git clone https://github.com/ZoomQuiet/io.git && cd io
+
+# 4) 配置发布凭据 —— 只放本机，绝不入库/上传
+cat > wrangler.toml <<'EOF'
+name = "io"
+account_id = "<你的 CF ACCOUNT_ID>"
+[pages]
+project_name = "io"
+[[pages.advanced]]
+build_command = ""
+EOF
+# 让 deploy 脚本读取凭据（脚本支持从 wrangler.toml 读取 CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID）
+
+# 5) 首次编译
+unset CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID
+~/go/bin/hugo --gc --minify -d public
+
+# 6) 试发布（生成临时代理 URL，不覆盖生产）
+npx --yes wrangler@4 pages deploy public --project-name=io --branch=preview-test
+
+# 7) 正式发布
+bash _scm/deploy/hugo-deploy.sh
+```
+
+> 新主机发布只需：Hugo + node/wrangler + git + `wrangler.toml`（凭据）。仓库内主题与脚本齐全，不依赖任何外部主题下载。
+
+---
+
+## 发布要点
+
+- CF Pages 项目 `io`：无 GitHub 集成、无构建命令，`destination_dir = public`，仅接受 wrangler 直传。
+- 仓库**不包含 `.github/`**，push GitHub 不会触发任何构建。
+- 正式发布 = `bash _scm/deploy/hugo-deploy.sh`。
 
 ## 版权
 
-Copyright 1974-2025 Zoom.Quiet, All rights reserved.
+Copyright 1974-2026 Zoom.Quiet, All rights reserved.
