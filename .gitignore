@@ -10,6 +10,9 @@ wheels/
 # Virtual environments
 .venv
 
+# Node.js dependencies
+node_modules/
+
 # Wrangler configuration (contains sensitive data)
 wrangler.toml
 
