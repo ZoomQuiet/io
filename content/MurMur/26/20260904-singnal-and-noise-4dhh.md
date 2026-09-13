@@ -1,8 +1,17 @@
+---
+title: "信号与噪音: DHH 影响我的二十年"
+summary: "Signal and Noise — Twenty Years of DHH's Influence on Me ... 人生最后拼的还是品味"
+date: "2026-09-04"
+tags:
+  - "MurMur"
+  - "26"
+---
 
-## Signal and Noise
+# Signal and Noise
+>
 > Twenty Years of DHH's Influence on Me
 
-原文：https://mp.weixin.qq.com/s/qwzNUQEtUbdSh00ruIhJow
+原文：<https://mp.weixin.qq.com/s/qwzNUQEtUbdSh00ruIhJow>
 标题：信号与噪音：DHH 影响我的二十年
 作者：张汉东（觉学社）
 译者: Grok Bot
@@ -36,7 +45,6 @@ If I have to define it, I would rather call it:
 A twenty-year history of how one programmer's technical taste was formed.
 And DHH has been appearing, faintly, all along that road.
 
-
 ## In 2005, we were all learning how to make software complicated
 
 The programmer's world of 2005 was nothing like today.
@@ -64,7 +72,6 @@ It is hard to tell:
 What complexity is necessary,
 and what is only complexity for its own sake.
 
-
 ## Then I saw the fifteen-minute Rails demo
 
 What truly changed me in DHH's Rails demo was not "you can write a blog in fifteen minutes."
@@ -86,7 +93,6 @@ Good technology takes some power away from you.
 More precisely:
 It takes away the decisions that were never worth your time to think about.
 Looking back now, that may have been when I first developed something like a real "technical aesthetic."
-
 
 ## Escaping from Java to Ruby
 
@@ -115,7 +121,6 @@ The two questions differ enormously.
 The first cares about capability.
 The second begins to care about choice.
 And taste, very likely, begins with choice.
-
 
 ## Because of Rails, I bought a Mac
 
@@ -278,7 +283,6 @@ Do a little less.
 It is:
 Find the real signal.
 
-
 ## I have grown more and more fond of deleting
 
 Young programmers usually love creating.
@@ -309,7 +313,6 @@ Why does a person actively give up an opportunity that looks fine?
 These questions slowly became the same question for me.
 Because design, much of the time, is:
 Refusal.
-
 
 ## From Ruby to Rust looks far; it is not that far
 
@@ -348,7 +351,6 @@ Truly good simplicity is not the absence of complexity.
 It is:
 Complexity placed correctly where it belongs.
 
-
 ## Twenty years later, DHH appears again on my computer
 
 Then time arrived at today.
@@ -367,7 +369,6 @@ Omarchy did not invent Linux.
 Just as Rails never invented databases, HTTP, MVC, or web applications.
 What is special is still:
 Someone made choices for you.
-
 
 ## Linux never lacked freedom; it lacked judgment
 
@@ -401,7 +402,6 @@ Together they should feel like this.
 Not that other choices are bad.
 But:
 Choice itself must happen.
-
 
 ## Rails and Omarchy are really the same kind of work
 
@@ -438,7 +438,6 @@ Only twenty years ago DHH picked a combination out of the complexity of web deve
 Twenty years later he again picked, from Linux's nearly infinite possibility space, a set he thought most worth keeping.
 So I suddenly felt:
 Omarchy itself is an OS-level practice of Signal v. Noise.
-
 
 ## Omarchy: catching signal from Linux's noise
 
@@ -483,7 +482,6 @@ and then tells you:
 Try this.
 I feel more and more that this is a very scarce ability.
 
-
 ## What is truly expensive is not creation, but filtering
 
 For a long time the tech industry had a subconscious:
@@ -508,7 +506,6 @@ Experience.
 Judgment.
 And finally something hard to quantify:
 Taste.
-
 
 ## Twenty years ago, because of DHH, I went toward Mac
 
@@ -542,7 +539,6 @@ What the person who designed it chose to keep.
 And:
 Why he dared delete the rest.
 
-
 ## Perhaps taste itself is a kind of compression
 
 If I had to define "technical taste" today,
@@ -563,7 +559,6 @@ Because:
 He knew enough, so he dared to delete.
 Simplicity never equals ignorance.
 Often, real simplicity is compression after enormous complexity.
-
 
 ## AI makes this problem more extreme
 
@@ -611,7 +606,6 @@ When the ability to create approaches infinity,
 what becomes scarce is:
 What should not be created.
 
-
 ## In the AI era, humans may become signal filters again
 
 So I more and more like another way of understanding future software development.
@@ -637,7 +631,6 @@ Correctness.
 AI can help us create more and more things.
 But "what is worth creating" remains a very hard question.
 It may even be more important than before.
-
 
 ## I finally understand what Rails taught me
 
@@ -691,7 +684,6 @@ A system can give me a hundred options — why should I own all hundred?
 Everyone talks about efficiency.
 But what does efficiency finally serve?
 These questions slowly enter a person's intuition.
-
 
 ## Technology eventually becomes a person's character
 
@@ -751,7 +743,7 @@ tell signal from noise,
 then
 let the noise pass.
 
-# PS:
+# PS
 
 这篇文章是为了首届 Omarchy 大会中国场 的宣传, 而连夜写就的,发布时间是 凌晨4点, 可以想见当时 老张的心情;
 
@@ -764,14 +756,14 @@ let the noise pass.
 
 品味, 这词由 Jobs 引领, Graham 强调, LLM 们证明...现在叕重新回到热榜;
 
-但是, 翻译过来就是: 
+但是, 翻译过来就是:
     老张不才, 技术生涯和 DHH 们一直神交不断, 从没落后
     ..从JAVA 到 RoR 再到 Rust, 以及现在的 Omarchy , 都不自觉的和领域大佬们有相同的品味;
 
 有选择固然好, 但是, 选择太多了就等于没有选择;
 所以, 有贤能为所有人作出选择,是需要大智慧大能力大品味的;
 
-于是俺的反应, 
+于是俺的反应,
 这..不就是 1984 中那位"大兄弟"嘛?
 
     一个世界
@@ -780,8 +772,8 @@ let the noise pass.
 
 唉嘛...这好象哪里有不对了吧...
 
-因为知识的足够多, 才敢尽情删除, 才能为大众作出选择 .. 
-但是, 并不必然是最好的选择吧? 
+因为知识的足够多, 才敢尽情删除, 才能为大众作出选择 ..
+但是, 并不必然是最好的选择吧?
 
 比如, 这次 Omarchy 的爆火, 并不是因为组合起来的那一组老技术:
  Arch, Hyprland ...
@@ -821,7 +813,6 @@ Linux 世界以及真实世界的各种选择, 并不是噪音, 而是信号;
 
   |> 260904 日糟:
   1/4(每天吐糟不应超过4次)
-
 
 ```
 NN 6317
