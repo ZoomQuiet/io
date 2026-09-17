@@ -94,10 +94,11 @@ home = ["HTML", "RSS", "JSON"]
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
+    ignoreLocation = true
     location = 0
     distance = 1000
     threshold = 0.4
-    minMatchCharLength = 0
+    minMatchCharLength = 1
     keys = ["title", "permalink", "summary", "content"]
 
 [[menu.main]]
