@@ -1,0 +1,26 @@
+{
+  "providers": {
+    "tk1omni": {
+      "baseUrl": "https://tk1new-api.tailf2bbb1.ts.net/v1",
+      "api": "openai-completions",
+      "apiKey": "<OMNIROUTE gbot-pi key, not in git; live file /home/box/.config/omniroute/api.key>",
+      "models": [
+        {
+          "id": "free-LLMs",
+          "name": "free-LLMs (tk1 OmniRoute combo)",
+          "input": [
+            "text"
+          ],
+          "contextWindow": 200000,
+          "maxTokens": 8192,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          }
+        }
+      ]
+    }
+  }
+}
