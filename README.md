@@ -158,7 +158,10 @@ bash _scm/deploy/hugo-deploy.sh
 - CF Pages 项目 `io`：无 GitHub 集成、无构建命令，`destination_dir = public`，仅接受 wrangler 直传。
 - 仓库**不包含 `.github/`**，push GitHub 不会触发任何构建。
 - 正式发布 = `bash _scm/deploy/hugo-deploy.sh`。
-- 每次发布记录写入仓库根目录 [`CHANGELOG.md`](CHANGELOG.md)（内容上线 + CF 部署 ID）。
+- 每次发布记录写入仓库根目录 [`CHANGELOG.md`](CHANGELOG.md)（内容上线 + CF 部署 ID）：
+  - 部署成功后由 `_scm/deploy/changelog.py` **自动追加**条目（发布时 HEAD、变更基线、部署 ID/URL、工具链、构建规模、内容变更清单）。
+  - 默认自动 `git commit CHANGELOG.md`；设 `CHANGELOG_AUTOCOMMIT=0` 可只写文件不提交。
+  - 手工补记可单独运行 `python3 _scm/deploy/changelog.py --dry-run` 预览条目。
 
 ## 版权
 

@@ -4,14 +4,16 @@
 
 发布方式：`bash _scm/deploy/hugo-deploy.sh`（`hugo --gc --minify` 编译 + `wrangler pages deploy public --project-name=io --branch=main` 直传 Cloudflare Pages）。
 
+自 2026-11-22 起，部署脚本会在发布成功后自动追加本文件条目（`_scm/deploy/changelog.py`）；下列早期条目为手工记录。
+
 ---
 
 ## 2026-11-22 — 4 篇新文章上线
 
 | 项目 | 内容 |
 |------|------|
-| 发布前 HEAD | `a0fb0a8e4` |
-| 发布后 commit | `83ae014ce` |
+| 发布时 HEAD | `a0fb0a8e4` |
+| 内容 commit | `83ae014ce` |
 | CF Pages 部署 | `28d73da5-085f-496b-a65c-400bdc44f580` (Production / main) |
 | 预览地址 | https://28d73da5.io-8h2.pages.dev |
 | 工具链 | Hugo v0.147.9 (extended) · wrangler 4.127.1 |
