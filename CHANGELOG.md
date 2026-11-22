@@ -8,6 +8,25 @@
 
 ---
 
+## 2026-11-22 16:06 — 发布记录（3 项内容变更）
+
+| 项目 | 内容 |
+|------|------|
+| 发布时 HEAD | `e012c6e94` |
+| 变更基线 | `83ae014` |
+| 上次发布时 HEAD | `a0fb0a8e4` |
+| CF Pages 部署 | `4c254739-5c29-4b89-b895-2f94230a5da8` (Production / main) |
+| 预览地址 | https://4c254739.io-8h2.pages.dev |
+| 工具链 | Hugo v0.147.9 · wrangler 4.127.1 |
+| 构建产物 | 1159 pages / 2474 files, 95M |
+| 记录方式 | 自动（`_scm/deploy/changelog.py`） |
+
+### 本次内容变更（相对 `83ae014`）
+
+- `M` `README.md`
+- `A` `_scm/deploy/changelog.py`
+- `M` `_scm/deploy/hugo-deploy.sh`
+
 ## 2026-11-22 — 4 篇新文章上线
 
 | 项目 | 内容 |
