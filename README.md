@@ -158,6 +158,7 @@ bash _scm/deploy/hugo-deploy.sh
 - CF Pages 项目 `io`：无 GitHub 集成、无构建命令，`destination_dir = public`，仅接受 wrangler 直传。
 - 仓库**不包含 `.github/`**，push GitHub 不会触发任何构建。
 - 正式发布 = `bash _scm/deploy/hugo-deploy.sh`。
+- 每次发布记录写入仓库根目录 [`CHANGELOG.md`](CHANGELOG.md)（内容上线 + CF 部署 ID）。
 
 ## 版权
 
